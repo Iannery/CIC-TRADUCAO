@@ -33,10 +33,10 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/professores-aposentados|
 |✅|https://cic.unb.br/tecnicos-administrativos|
 |✅|https://cic.unb.br/tecnicos-apoio|
-|❌|https://cic.unb.br/estagiarios|
+|✅|https://cic.unb.br/estagiarios|
 |✅|https://cic.unb.br/professores?start=20|
 |✅|https://cic.unb.br/professores?start=40|
-|❌|https://cic.unb.br/professores/58-alves|
+|✅|https://cic.unb.br/professores/58-alves|
 |❌|https://cic.unb.br/professores/62-aleteia|
 |❌|https://cic.unb.br/professores/64-andred|
 |❌|https://cic.unb.br/professores/65-macchiavello|
