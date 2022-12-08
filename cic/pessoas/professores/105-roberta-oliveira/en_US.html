@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<base href="https://cic.unb.br/professores/105-roberta-oliveira" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Computer Science Department - CIC - Roberta Barbosa Oliveira</title>
+	<link href="/templates/unb-unidades/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/templates/unb-unidades/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/unb-unidades/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/unb-unidades/css/menu.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/vembed/vembed.css" rel="stylesheet" type="text/css" />
+	<link href="/media/jfontsize/css/jfontsize.css" rel="stylesheet" type="text/css" />
+	<script type="application/json"
+		class="joomla-script-options new">{"csrf.token":"a0bbc359ec8a9d1cf393acbe8a3809aa","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/jui/js/jquery.min.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
+	<script src="/templates/unb-unidades/js/template.js" type="text/javascript"></script>
+	<script src="/media/jfontsize/js/jquery.jfontsize-1.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function ($) {
+			$().ready(function () {
+				$('body').jfontsize({
+					btnMinusClasseId: '#jfontsize-minus',
+					btnDefaultClasseId: '#jfontsize-default',
+					btnPlusClasseId: '#jfontsize-plus',
+					btnMinusMaxHits: 10,
+					btnPlusMaxHits: 10,
+					sizeChange: 1
+				});
+			});
+		})(jQuery)
+	</script>
+
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<style type="text/css">
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.site-title {
+			font-family: 'Open Sans', sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		body.site {
+			border-top: 3px solid #0088cc;
+			background-color: #f4f6f7
+		}
+
+		a {
+			color: #0088cc;
+		}
+
+		.navbar-inner,
+		.nav-list>.active>a,
+		.nav-list>.active>a:hover,
+		.dropdown-menu li>a:hover,
+		.dropdown-menu .active>a,
+		.dropdown-menu .active>a:hover,
+		.nav-pills>.active>a,
+		.nav-pills>.active>a:hover,
+		.btn-primary {
+			background: #0088cc;
+		}
+
+		.navbar-inner {
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+		}
+	</style>
+	<!--[if lt IE 9]>
+		<script src="/media/jui/js/html5.js"></script>
+	<![endif]-->
+	<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+
+	<script>
+		function openMenu() {
+			var x = document.getElementById("responsiveMenu");
+			if (x.className === "nav menu menuPrincipal") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav menu menuPrincipal";
+			}
+		}
+		/*Ocultar/exibir menu dropdown ao clicar em dispositivos móveis*/
+		jQuery(function ($) {
+			$(document).ready(function () {
+				$('.nav-header').click(function () {
+					$('.nav-header').not(this).nextUntil('.nav-header').hide();
+					$('.nav-header').not(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+					$(this).nextUntil('.nav-header').toggle();
+					if ($(this).closest('li').find('ul').is(':hidden')) {
+						$(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+					}
+					else {
+						$(this).attr("style", "background: url(/images/icones/icon_menos.png) no-repeat right;");
+					}
+					return false;
+				});
+				$(document).click(function () {
+					$('.nav-header').nextUntil('.nav-header').hide();
+					$('.nav-header').attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+				});
+
+				$(window).resize(function () {
+					var largura = $(document).width();
+					if (largura > 641) {
+						$('#responsiveMenu').removeClass('responsive');
+					}
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body class="site com_contact view-contact no-layout no-task itemid-788">
+
+	<!-- Body -->
+	<div class="body">
+		<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+			<ul id="menu-barra-temp" style="list-style:none;">
+				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a
+						href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal
+						do Governo Brasileiro</a></li>
+				<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;"
+						href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+			</ul>
+		</div>
+		<!--<div class="barra-topo">
+			<div class="barra-inner container">
+				<div class="row-fluid">
+					<div class="logo-unb span3">
+						
+					</div>
+					<div class="menu-unb span7">
+						<div class="menu-toggle-list">
+							<a class="btn-menu" data-toggle="collapse" data-target="#menu-collapse">
+								<img src="/images/icon-menu.png" alt="Ícone do menu"> <span>Menu</span>
+							</a>
+							<div id="menu-collapse" class="sp-mobile-menu collapse">
+								    
+							</div>
+						</div>	
+					</div>
+					<div class="links-unb span2 pull-right">
+						
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>-->
+
+
+		<link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
+
+		<div class="barra-topo">
+			<div class="barra-inner container">
+				<div class="row-fluid">
+					<div class="logo-unb span3">
+						<div class="custom">
+							<p>
+								<a href="https://www.unb.br" title="Ir para o Portal da UnB">
+									<img alt="" src="https://web.unb.br/images/logo-unb.png">
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="menu-unb span7">
+						<div class="menu-toggle-list">
+							<a class="btn-menu collapsed" data-target="#menu-collapse" data-toggle="collapse">
+								<img src="https://web.unb.br/images/icon-menu.png" alt="Ícone do menu"> <span>Menu</span>
+
+							</a>
+							<div id="menu-collapse" class="barra-sp-mobile-menu collapse">
+								<ul class="nav menu">
+									<li class="item-301"><a href="http://www.unb.br/a-unb?menu=423" target="_blank">Sobre a UnB</a></li>
+									<li class="item-305"><a href="https://www.unb.br/institucional/unidades-academicas/institutos"
+											target="_blank">Unidades acadêmicas</a></li>
+									<li class="item-302"><a href="http://estudenaunb.unb.br/" target="_blank">Estude na UnB</a></li>
+									<li class="item-312"><a href="http://www.unb.br/graduacao?menu=439" target="_blank">Graduação</a></li>
+									<li class="item-313"><a href="http://www.unb.br/pos-graduacao?menu=440"
+											target="_blank">Pós-Graduação</a></li>
+									<li class="item-306"><a href="http://www.unb.br/estrutura-administrativa?menu=425"
+											target="_blank">Administração</a></li>
+									<li class="item-307"><a href="http://dgp.unb.br/" target="_blank">Servidor</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="links-unb span2 pull-right">
+						<div class="modulo-icones-barratopo" style="float:right">
+							<ul>
+								<!-- 111 <li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="default">&nbsp;</a>
+                         </li> -->
+								<!-- JONA-->
+								<li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="webmail"
+										title="Webmail">&nbsp;</a>
+								</li>
+								<li style="display:none;"><a href="/mapa-do-site?view=html&amp;id=0" class="icones-barratopo"
+										style="padding-right:35px" id="mapa" title="Mapa do Site">&nbsp;</a>
+								</li>
+								<li><a target="_blank" href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" id="telefones"
+										title="Telefones da UnB">&nbsp;</a>
+								</li>
+								<li><a target="_blank" href="https://sistema.ouvidorias.gov.br" id="transparencia"
+										title="Fala.BR">&nbsp;</a>
+								</li>
+
+								<li><a target="_blank" href="http://www.sistemas.unb.br" class="icones-barratopo" id="sistemas"
+										title="Sistemas">&nbsp;</a>
+								</li>
+
+
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+
+	<div class="container">
+		<!-- Header -->
+		<header class="header" role="banner">
+			<div class="header-inner clearfix">
+				<a class="brand pull-left" href="/">
+					<img src="https://cic.unb.br/images/headers/tipograma_CIC_2_alta_326x40.png"
+						alt="Departamento de Ciências da Computação - CIC" /> </a>
+				<div class="header-search pull-right">
+					<form action="/component/pesquisagoogle/" method="post" style="display:inline-table">
+						<div class="btn-toolbar">
+							<div class="btn-group pull-left">
+								<!--<input type="text" name="busca" placeholder="Pesquisar..." maxlength="" value="" class="inputbox search-query" />-->
+								<input name="busca" id="mod-search-searchword" class="inputbox search-query" type="search" size="20"
+									placeholder="Pesquisar...">
+							</div>
+						</div>
+					</form>
+					<div class="jfontsize">
+						<a class="jfontsize-button" id="contraste"></a>
+						<a class="jfontsize-button" id="jfontsize-minus">A-</a>
+						<a class="jfontsize-button" id="jfontsize-default">A</a>
+						<a class="jfontsize-button" id="jfontsize-plus">A+</a>
+					</div>
+					<script>
+						(function ($) {
+							$().ready(function () {
+								$("a#contraste").click(function () {
+									$("html").toggleClass("contraste");
+								});
+							});
+						})(jQuery)
+
+					</script>
+				</div>
+			</div>
+		</header>
+
+		<div class="iconMenuResp">
+			<a href="javascript:void(0);" class="linkMenu" onclick="openMenu()">
+				<h4>MENU</h4>
+				<img src="/images/icones/icon_menu.png">
+			</a>
+		</div><span class="espacos"><br><br></span>
+
+		<div class="row-fluid">
+			<div class="menu-site span12">
+				<nav class="navigation navbar" role="navigation">
+					<ul class="nav menu menuPrincipal" style="position:relative;z-index:3" id="responsiveMenu">
+						<li class="item-101"><a class=" hidden" href="/">Home</a></li>
+						<li class="item-747 deeper parent"><span class="nav-header ">About CIC</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-753"><a href="/o-cic/historia">History</a></li>
+								<li class="item-681"><a href="/o-cic/fale-conosco">Contact Us</a></li>
+								<li class="item-754"><a href="/o-cic/pessoas">People</a></li>
+								<li class="item-755"><a href="/o-cic/infraestrutura">Facilities</a></li>
+								<li class="item-756"><a href="/o-cic/marca-cic">CIC Brand</a></li>
+							</ul>
+						</li>
+						<li class="item-748 active deeper parent"><span class="nav-header ">Academics</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-762"><a href="/ensino/ingressante">Admissions</a></li>
+								<li class="item-770"><a href="/ensino/graduacao">Undergraduate</a></li>
+								<li class="item-771 current active"><a href="/ensino/pos-graduacao">Postgraduate</a></li>
+							</ul>
+						</li>
+						<li class="item-749 deeper parent"><span class="nav-header ">Research</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-772"><a href="/pesquisa/grupos-de-pesquisa">Research Groups</a></li>
+								<li class="item-774"><a href="/pesquisa/cooperacoes">Partnerships</a></li>
+							</ul>
+						</li>
+						<li class="item-750 deeper parent"><span class="nav-header ">Extension</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-776"><a href="/extensao/universitaria">University Extension</a></li>
+								<li class="item-777"><a href="/extensao/extensao-projetos">Programs</a></li>
+							</ul>
+						</li>
+						<li class="item-751 deeper parent"><span class="nav-header ">Organization</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-778"><a href="/administracao/chefia">Faculty Leadership</a></li>
+								<li class="item-779"><a href="/administracao/coordenacao-de-cursos">Program Management</a></li>
+								<li class="item-780"><a href="/administracao/representacao-em-conselhos-camaras">Board and Council
+										Representation</a></li>
+							</ul>
+						</li>
+						<li class="item-752 deeper parent"><span class="nav-header ">Information</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-784"><a href="/informacoes/documentos">Documents</a></li>
+								<li class="item-896"><a href="/informacoes/processos-sei">SEI Processes</a></li>
+								<li class="item-785"><a href="/informacoes/noticias">News</a></li>
+								<li class="item-786"><a href="/component/agenda/agendas">Events</a></li>
+								<li class="item-787"><a href="/informacoes/faq">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+
+
+					<div class="custom redes-sociais">
+						<p><a href="https://www.facebook.com/cicunb" target="_blank" rel="alternate noopener noreferrer"><img
+									src="/images/icones/facebook_01.fw.png" alt="facebook 01.fw" /></a> <a
+								href="https://www.instagram.com/cic.unb/" target="_blank" rel="alternate noopener noreferrer"><img
+									src="/images/icones/instagran_01.fw.png" alt="instagran 01.fw" /></a>
+							<!--a href="https://twitter.com/cicunb" target="_blank" rel="noopener noreferrer"><img src="/images/icones/twitter_01.fw.png" alt="twitter 01.fw" /></a-->
+							<a href="https://www.youtube.com/channel/UCoYRWFWlxTmiQLNcAuM9juA" target="_blank"
+								rel="noopener noreferrer"><img src="/images/icones/unbtv_youtube-2.png" alt="youtube" width="35"
+									height="35" /></a>
+						</p>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+		<div class="moduletable">
+			<div aria-label="Trilha de Navegação" role="navigation">
+				<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li class="active">
+						<span class="divider icon-location"></span>
+					</li>
+
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a itemprop="item" href="/professores" class="pathway"><span itemprop="name">Faculty Members</span></a>
+
+						<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="" /> </span>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+						<span itemprop="name">
+							Roberta Barbosa Oliveira </span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div id="aside" class="side span4">
+				<!-- Begin Right Sidebar -->
+				<div class="moduletable menu-areas">
+					<h3>People Menu</h3>
+					<style>
+						.list-group {
+							padding-left: 0;
+							margin-bottom: 20px
+						}
+
+						.list-group-item {
+							position: relative;
+							display: block;
+							padding: 10px 15px;
+							margin-bottom: -1px;
+							background-color: #fff;
+							border: 1px solid #ddd
+						}
+
+						.list-group-item:first-child {
+							border-top-left-radius: 4px;
+							border-top-right-radius: 4px
+						}
+
+						.list-group-item:last-child {
+							margin-bottom: 0;
+							border-bottom-right-radius: 4px;
+							border-bottom-left-radius: 4px
+						}
+
+						a.list-group-item,
+						button.list-group-item {
+							color: #555
+						}
+
+						a.list-group-item .list-group-item-heading,
+						button.list-group-item .list-group-item-heading {
+							color: #333
+						}
+
+						a.list-group-item:focus,
+						a.list-group-item:hover,
+						button.list-group-item:focus,
+						button.list-group-item:hover {
+							color: #555;
+							text-decoration: none;
+							background-color: #f5f5f5
+						}
+
+						button.list-group-item {
+							width: 100%;
+							text-align: left
+						}
+
+						.list-group-item.disabled,
+						.list-group-item.disabled:focus,
+						.list-group-item.disabled:hover {
+							color: #777;
+							cursor: not-allowed;
+							background-color: #eee
+						}
+
+						.list-group-item.disabled .list-group-item-heading,
+						.list-group-item.disabled:focus .list-group-item-heading,
+						.list-group-item.disabled:hover .list-group-item-heading {
+							color: inherit
+						}
+
+						.list-group-item.disabled .list-group-item-text,
+						.list-group-item.disabled:focus .list-group-item-text,
+						.list-group-item.disabled:hover .list-group-item-text {
+							color: #777
+						}
+
+						.list-group-item.active,
+						.list-group-item.active:focus,
+						.list-group-item.active:hover {
+							z-index: 2;
+							color: #fff;
+							background-color: #337ab7;
+							border-color: #337ab7
+						}
+
+						.list-group-item.active .list-group-item-heading,
+						.list-group-item.active .list-group-item-heading>.small,
+						.list-group-item.active .list-group-item-heading>small,
+						.list-group-item.active:focus .list-group-item-heading,
+						.list-group-item.active:focus .list-group-item-heading>.small,
+						.list-group-item.active:focus .list-group-item-heading>small,
+						.list-group-item.active:hover .list-group-item-heading,
+						.list-group-item.active:hover .list-group-item-heading>.small,
+						.list-group-item.active:hover .list-group-item-heading>small {
+							color: inherit
+						}
+
+						.list-group-item.active .list-group-item-text,
+						.list-group-item.active:focus .list-group-item-text,
+						.list-group-item.active:hover .list-group-item-text {
+							color: #c7ddef
+						}
+
+						.list-group-item-success {
+							color: #3c763d;
+							background-color: #dff0d8
+						}
+
+						a.list-group-item-success,
+						button.list-group-item-success {
+							color: #3c763d
+						}
+
+						a.list-group-item-success .list-group-item-heading,
+						button.list-group-item-success .list-group-item-heading {
+							color: inherit
+						}
+
+						a.list-group-item-success:focus,
+						a.list-group-item-success:hover,
+						button.list-group-item-success:focus,
+						button.list-group-item-success:hover {
+							color: #3c763d;
+							background-color: #d0e9c6
+						}
+
+						a.list-group-item-success.active,
+						a.list-group-item-success.active:focus,
+						a.list-group-item-success.active:hover,
+						button.list-group-item-success.active,
+						button.list-group-item-success.active:focus,
+						button.list-group-item-success.active:hover {
+							color: #fff;
+							background-color: #3c763d;
+							border-color: #3c763d
+						}
+
+						.list-group-item-info {
+							color: #31708f;
+							background-color: #d9edf7
+						}
+
+						a.list-group-item-info,
+						button.list-group-item-info {
+							color: #31708f
+						}
+
+						a.list-group-item-info .list-group-item-heading,
+						button.list-group-item-info .list-group-item-heading {
+							color: inherit
+						}
+
+						a.list-group-item-info:focus,
+						a.list-group-item-info:hover,
+						button.list-group-item-info:focus,
+						button.list-group-item-info:hover {
+							color: #31708f;
+							background-color: #c4e3f3
+						}
+
+						a.list-group-item-info.active,
+						a.list-group-item-info.active:focus,
+						a.list-group-item-info.active:hover,
+						button.list-group-item-info.active,
+						button.list-group-item-info.active:focus,
+						button.list-group-item-info.active:hover {
+							color: #fff;
+							background-color: #31708f;
+							border-color: #31708f
+						}
+
+						.list-group-item-warning {
+							color: #8a6d3b;
+							background-color: #fcf8e3
+						}
+
+						a.list-group-item-warning,
+						button.list-group-item-warning {
+							color: #8a6d3b
+						}
+
+						a.list-group-item-warning .list-group-item-heading,
+						button.list-group-item-warning .list-group-item-heading {
+							color: inherit
+						}
+
+						a.list-group-item-warning:focus,
+						a.list-group-item-warning:hover,
+						button.list-group-item-warning:focus,
+						button.list-group-item-warning:hover {
+							color: #8a6d3b;
+							background-color: #faf2cc
+						}
+
+						a.list-group-item-warning.active,
+						a.list-group-item-warning.active:focus,
+						a.list-group-item-warning.active:hover,
+						button.list-group-item-warning.active,
+						button.list-group-item-warning.active:focus,
+						button.list-group-item-warning.active:hover {
+							color: #fff;
+							background-color: #8a6d3b;
+							border-color: #8a6d3b
+						}
+
+						.list-group-item-danger {
+							color: #a94442;
+							background-color: #f2dede
+						}
+
+						a.list-group-item-danger,
+						button.list-group-item-danger {
+							color: #a94442
+						}
+
+						a.list-group-item-danger .list-group-item-heading,
+						button.list-group-item-danger .list-group-item-heading {
+							color: inherit
+						}
+
+						a.list-group-item-danger:focus,
+						a.list-group-item-danger:hover,
+						button.list-group-item-danger:focus,
+						button.list-group-item-danger:hover {
+							color: #a94442;
+							background-color: #ebcccc
+						}
+
+						a.list-group-item-danger.active,
+						a.list-group-item-danger.active:focus,
+						a.list-group-item-danger.active:hover,
+						button.list-group-item-danger.active,
+						button.list-group-item-danger.active:focus,
+						button.list-group-item-danger.active:hover {
+							color: #fff;
+							background-color: #a94442;
+							border-color: #a94442
+						}
+
+						.list-group-item-heading {
+							margin-top: 0;
+							margin-bottom: 5px
+						}
+
+						.list-group-item-text {
+							margin-bottom: 0;
+							line-height: 1.3
+						}
+
+						.panel {
+							margin-bottom: 20px;
+							background-color: #fff;
+							border: 1px solid transparent;
+							border-radius: 4px;
+							-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+							box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+						}
+
+						.panel-body {
+							padding: 15px
+						}
+
+						.panel-heading {
+							padding: 10px 15px;
+							border-bottom: 1px solid transparent;
+							border-top-left-radius: 3px;
+							border-top-right-radius: 3px
+						}
+
+						.panel-heading>.dropdown .dropdown-toggle {
+							color: inherit
+						}
+
+						.panel-title {
+							margin-top: 0;
+							margin-bottom: 0;
+							font-size: 16px;
+							color: inherit
+						}
+
+						.panel-title>.small,
+						.panel-title>.small>a,
+						.panel-title>a,
+						.panel-title>small,
+						.panel-title>small>a {
+							color: inherit
+						}
+
+						.panel-footer {
+							padding: 10px 15px;
+							background-color: #f5f5f5;
+							border-top: 1px solid #ddd;
+							border-bottom-right-radius: 3px;
+							border-bottom-left-radius: 3px
+						}
+
+						.panel>.list-group,
+						.panel>.panel-collapse>.list-group {
+							margin-bottom: 0
+						}
+
+						.panel>.list-group .list-group-item,
+						.panel>.panel-collapse>.list-group .list-group-item {
+							border-width: 1px 0;
+							border-radius: 0
+						}
+
+						.panel>.list-group:first-child .list-group-item:first-child,
+						.panel>.panel-collapse>.list-group:first-child .list-group-item:first-child {
+							border-top: 0;
+							border-top-left-radius: 3px;
+							border-top-right-radius: 3px
+						}
+
+						.panel>.list-group:last-child .list-group-item:last-child,
+						.panel>.panel-collapse>.list-group:last-child .list-group-item:last-child {
+							border-bottom: 0;
+							border-bottom-right-radius: 3px;
+							border-bottom-left-radius: 3px
+						}
+
+						.panel>.panel-heading+.panel-collapse>.list-group .list-group-item:first-child {
+							border-top-left-radius: 0;
+							border-top-right-radius: 0
+						}
+
+						.panel-heading+.list-group .list-group-item:first-child {
+							border-top-width: 0
+						}
+
+						.list-group+.panel-footer {
+							border-top-width: 0
+						}
+
+						.panel>.panel-collapse>.table,
+						.panel>.table,
+						.panel>.table-responsive>.table {
+							margin-bottom: 0
+						}
+
+						.glyphicon-chevron-down:before {
+							content: "\e114";
+						}
+					</style>
+
+					<style>
+						.just-padding {
+							/*padding: 15px;*/
+						}
+
+						.list-group.list-group-root {
+							padding: 0;
+							overflow: hidden;
+						}
+
+						.list-group.list-group-root .list-group {
+							margin-bottom: 0;
+						}
+
+						.list-group.list-group-root .list-group-item {
+							border-radius: 0;
+							border-width: 1px 0 0 0;
+						}
+
+						/*.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+}*/
+						.list-group.list-group-root>.list-group-item {
+							background: #eaebee;
+							border-top: 0px solid #0fff;
+							font-weight: bold;
+							/*text-transform: uppercase;*/
+							cursor: pointer;
+							margin-top: 10px;
+						}
+
+						.list-group.list-group-root>.list-group>.list-group-item {
+							/*padding-left: 30px;
+  font-weight: bold;*/
+						}
+
+						.list-group.list-group-root>.list-group>.list-group>.list-group-item {
+							padding-left: 30px;
+						}
+
+						.list-group-item .glyphicon {
+							margin-right: 5px;
+							float: right;
+						}
+
+						list-group>a {
+							border-top: 3px solid #090;
+						}
+
+						.well {
+							border: 0px;
+							background-color: #fff;
+							border-radius: none;
+						}
+
+						.list-group-item.collapsed {
+							font-weight: normal;
+						}
+					</style>
+
+					<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+					<link rel="stylesheet" href="/templates/unb/css/fonts/font-awesome/css/font-awesome.min.css">
+
+
+					<div class="just-padding">
+
+						<div class="list-group list-group-root ">
+
+
+							<a href="/professores" class="list-group-item">
+								Faculty Members </a>
+							<a href="/professores-aposentados" class="list-group-item">
+								Retired Faculty </a>
+							<a href="/tecnicos-administrativos" class="list-group-item">
+								Administrative Technicians </a>
+							<a href="/tecnicos-apoio" class="list-group-item">
+								Support Technicians </a>
+							<a href="/estagiarios" class="list-group-item">
+								Interns </a>
+						</div>
+					</div>
+
+					<!--<script>
+$(function() {
+        
+  $('.list-group-item').click(function() {
+    $('.glyphicon', this)
+      .toggleClass('glyphicon-chevron-down')
+      .toggleClass('glyphicon-chevron-up');
+  });
+
+});
+</script>-->
+					<script>
+						submenuOn();
+					</script>
+
+					<!-- ##### -->
+
+
+				</div>
+
+				<!-- End Right Sidebar -->
+			</div>
+			<main id="content" role="main" class="span8">
+				<!-- Begin Content -->
+
+				<div id="system-message-container">
+				</div>
+
+				<div class="contact" itemscope itemtype="https://schema.org/Person">
+
+					<div class="page-header">
+						<h2>
+							<span class="contact-name" itemprop="name">Roberta Barbosa Oliveira</span>
+						</h2>
+					</div>
+
+
+
+
+					<form action="#" method="get" name="selectForm" id="selectForm">
+						<label for="select_contact">Select a person:</label>
+						<select id="select_contact" name="select_contact" class="inputbox"
+							onchange="document.location.href = this.value">
+							<option value="/professores/58-alves">Alba Cristina Magalhaes Alves de Melo</option>
+							<option value="/professores/62-aleteia">Aleteia Patricia Favacho de Araujo</option>
+							<option value="/professores/64-andred">Andr&eacute; Costa Drummond</option>
+							<option value="/professores/65-macchiavello">Bruno Macchiavello</option>
+							<option value="/professores/66-camilodorea">Camilo Chang D&oacute;rea</option>
+							<option value="/professores/67-ckoike">Carla Cavalcante Koike</option>
+							<option value="/professores/68-carlacastanho">Carla Denise Castanho</option>
+							<option value="/professores/70-nalon">Cl&aacute;udia Nalon</option>
+							<option value="/professores/71-dibio">Dibio Leandro Borges</option>
+							<option value="/professores/72-ishikawa">Edison Ishikawa</option>
+							<option value="/professores/73-ednacanedo">Edna Dias Canedo</option>
+							<option value="/professores/74-alchieri">Eduardo Adilo Pelinson Alchieri</option>
+							<option value="/professores/75-ferlima">Fernanda Lima</option>
+							<option value="/professores/76-nando">Fernando Albuquerque</option>
+							<option value="/professores/77-fbvidal">Flavio Barros Vidal</option>
+							<option value="/professores/78-flaviomoura">Flavio Leonardo Cavalcanti Moura</option>
+							<option value="/professores/79-genaina">Genaina Nunes Rodrigues</option>
+							<option value="/professores/80-geraldof">Geraldo P. R. Filho</option>
+							<option value="/professores/81-gmnobrega">Germana Menezes da Nobrega</option>
+							<option value="/professores/82-gnramos">Guilherme N. Ramos</option>
+							<option value="/professores/83-bordim">Jacir Luiz Bordim</option>
+							<option value="/professores/84-jancorrea">Jan Mendonca Correa</option>
+							<option value="/professores/85-gondim">Joao Jose Costa Gondim</option>
+							<option value="/professores/86-lucero">Jorge C. Lucero</option>
+							<option value="/professores/87-jhcf">Jorge Henrique Cabral Fernandes</option>
+							<option value="/professores/88-llleite">Leticia Lopes Leite</option>
+							<option value="/professores/89-weigang">Li Weigang</option>
+							<option value="/professores/90-luis-garcia">Lu&iacute;s Paulo Faina Garcia</option>
+							<option value="/professores/91-mgmandelli">Marcelo Grandi Mandelli</option>
+							<option value="/professores/92-mladeira">Marcelo Ladeira</option>
+							<option value="/professores/93-marcelo-marotta">Marcelo Marotta</option>
+							<option value="/professores/94-mfcaetano">Marcos Fagundes Caetano</option>
+							<option value="/professores/95-lamar">Marcus Vinicius Lamar</option>
+							<option value="/professores/96-fatimabrandao">Maria de Fatima R. Brandao</option>
+							<option value="/professores/97-mariaemilia">Maria Emilia Machado Telles Walter</option>
+							<option value="/professores/98-mholanda">Maristela Terto de Holanda</option>
+							<option value="/professores/99-ayala">Mauricio Ayala Rincon</option>
+							<option value="/professores/101-pedroberger">Pedro de Azevedo Berger</option>
+							<option value="/professores/102-pris">Priscila America Solis Mendez</option>
+							<option value="/professores/103-queiroz">Ricardo L. de Queiroz</option>
+							<option value="/professores/104-jacobi">Ricardo Pezzuol Jacobi</option>
+							<option value="/professores/105-roberta-oliveira" selected="selected">Roberta Barbosa Oliveira</option>
+							<option value="/professores/106-rbonifacio">Rodrigo Bonif&aacute;cio de Almeida</option>
+							<option value="/professores/107-teodecampos">Teofilo Emidio De Campos</option>
+							<option value="/professores/108-thiagodepaulo">Thiago Paulo Faleiros</option>
+							<option value="/professores/109-valves">Vander Ramos Alves</option>
+							<option value="/professores/110-viniciusrpb">Vinicius Ruela Pereira Borges</option>
+							<option value="/professores/111-wilsonhe">Wilson Henrique Veneziano</option>
+						</select>
+					</form>
+
+					<div class="tags">
+						<h4>Palavras-chave</h4>
+						<ul class="tags-list">
+							<li class="tag-720 tag-list0" itemprop="keywords">
+								<a href="/component/tags/tag/inteligencia-artificial" class="label label-info">
+									Inteligência Artificial </a>
+							</li>
+							<li class="tag-721 tag-list1" itemprop="keywords">
+								<a href="/component/tags/tag/processamento-digital-de-sinais-e-multimidia" class="label label-info">
+									Processamento Digital de Sinais e Multimídia </a>
+							</li>
+							<li class="tag-723 tag-list2" itemprop="keywords">
+								<a href="/component/tags/tag/visao-computacional" class="label label-info">
+									Visão Computacional </a>
+							</li>
+							<li class="tag-748 tag-list3" itemprop="keywords">
+								<a href="/component/tags/tag/professor-a-adjunto" class="label label-info">
+									Professor(a) Adjunto </a>
+							</li>
+						</ul>
+
+					</div>
+
+
+
+
+					<h3>Contato</h3>
+					<div class="thumbnail pull-right">
+						<img src="/images/uploads/2022/Update/Editor_de_fotos_para_site_150_x_150.png"
+							alt="Roberta Barbosa Oliveira" itemprop="image" />
+					</div>
+
+
+					<dl class="contact-address dl-horizontal" itemprop="address" itemscope
+						itemtype="https://schema.org/PostalAddress">
+						<dt>
+							<span class="jicons-none">
+							</span>
+						</dt>
+
+						<dd>
+							<span class="contact-street" itemprop="streetAddress">
+								A1-36-7<br />
+								<br />
+								Professor(a) Adjunto<br />
+								<br />
+							</span>
+						</dd>
+
+
+						<dt>
+							<span class="jicons-none" itemprop="email">
+							</span>
+						</dt>
+						<dd>
+							<span class="contact-emailto">
+								<span id="cloakcbabeb047e6a9b6fd30f0a057ae685f6">Este endereço de email está sendo protegido de
+									spambots. Você precisa do JavaScript ativado para vê-lo.</span>
+								<script type='text/javascript'>
+									document.getElementById('cloakcbabeb047e6a9b6fd30f0a057ae685f6').innerHTML = '';
+									var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+									var path = 'hr' + 'ef' + '=';
+									var addycbabeb047e6a9b6fd30f0a057ae685f6 = 'r&#111;b&#101;rt&#97;.&#111;l&#105;v&#101;&#105;r&#97;' + '&#64;';
+									addycbabeb047e6a9b6fd30f0a057ae685f6 = addycbabeb047e6a9b6fd30f0a057ae685f6 + '&#117;nb' + '&#46;' + 'br';
+									document.getElementById('cloakcbabeb047e6a9b6fd30f0a057ae685f6').innerHTML += addycbabeb047e6a9b6fd30f0a057ae685f6;
+								</script>
+							</span>
+						</dd>
+
+						<dt>
+							<span class="jicons-none">
+							</span>
+						</dt>
+						<dd>
+							<span class="contact-telephone" itemprop="telephone">
+								+55 (61) 3107-3683 </span>
+						</dd>
+						<dt>
+							<span class="jicons-none">
+							</span>
+						</dt>
+						<dd>
+							<span class="contact-fax" itemprop="faxNumber">
+								<a href="http://lattes.cnpq.br/1308225137416807" target="_blank" rel="noopener noreferrer"
+									itemprop="url">
+									<h4>Curriculum Lattes</h4>
+								</a>
+							</span>
+						</dd>
+					</dl>
+
+
+
+
+
+
+
+
+					<h3>Additional Information</h3>
+					<div class="contact-miscinfo">
+						<dl class="dl-horizontal">
+							<dt>
+								<span class="jicons-none">
+								</span>
+							</dt>
+							<dd>
+								<span class="contact-misc">
+									<p>&nbsp;</p>
+									<p>&nbsp;</p>
+									<p>Professora no Departamento de Ciência da Computação (CIC/IE) da Universidade de Brasília - UnB.
+										Doutora em Engenharia Informática pela Faculdade de Engenharia da Universidade do Porto -
+										FEUP/Portugal (2017). Mestre em Ciência da Computação pela Universidade Estadual Paulista "Júlio de
+										Mesquita Filho" - UNESP/IBILCE - São José do Rio Preto (2012), com graduação em Sistemas de
+										Informação pela Fundação Educacional de Fernandópolis - FEF (2008). Tem interesse na área de Ciência
+										da Computação, com ênfase em Processamento de Imagens e Visão Computacional. Tem experiência em
+										Processamento e Análise de Imagens Médicas, Reconhecimento de Padrões e Aprendizado de Máquina.</p>
+									<p>&nbsp;</p>
+									<p>Roberta Oliveira holds a BSc Degree in Information Systems in 2008 from the Fundação Educacional de
+										Fernandópolis, an MSc in Computer Science in 2012 from the São Paulo State University and a PhD in
+										Informatics Engineering in 2017 from the Faculty of Engineering of the University of Porto. She is
+										currently an Adjunct Professor at the University of Brasília. Her research interest can be summed up
+										in the following topics: digital image processing, computer vision, pattern recognition, machine
+										learning, and deep learning. She has projects related to medical image processing and analysis.</p>
+								</span>
+							</dd>
+						</dl>
+					</div>
+
+
+
+				</div>
+
+				<!-- End Content -->
+			</main>
+
+		</div>
+		<div class="row-fluid destaques">
+
+		</div>
+
+	</div>
+	<!--<style>
+  
+       a:hover {
+         color:#fff;
+         
+      }</style>-->
+	<!-- Footer -->
+	<footer class="footer" role="contentinfo">
+		<!--<div class="footer-inner">
+						<div class="clearfix"></div>
+			<hr />
+			
+			<div class="creditos text-center container">
+				<p>
+					<em>Campus</em> Universitário Darcy Ribeiro, Brasília-DF | CEP 70910-900 | telefone geral 55 61 3107 3300 <br />
+					Copyright &copy; 2022 Universidade de Brasília. Todos os direitos reservados.
+				</p>
+			</div>
+		</div>-->
+
+		<link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
+		<!--div class='cookie_bar'>
+            Usamos cookies para permitir que o nosso website funcione corretamente, para personalizar conteúdo e anúncios, para proporcionar funcionalidades das redes sociais e para analisar o nosso tráfego. Também partilhamos informação com os nossos parceiros das redes sociais, de publicidade e de analítica sobre o seu uso do nosso website. Saiba mais: 
+            <a href='https://web.unb.br/images/politica-de-cookies/Poltica_de_Cookies.pdf' title='Políticas de cookies' target='_blank'>Políticas de cookies</a>
+                <button type='button'>Aceitar cookies</button>
+        </div-->
+		<footer class="footer" role="contentinfo">
+			<div class="footer-inner">
+				<div class="menu-footer container">
+
+					<!-- <footer class="footer" role="contentinfo">
+	<div class="footer-inner">
+		<div class="menu-footer container"> -->
+					<ul class="nav menu">
+						<li class="item-113 divider deeper parent"><span class="separator">
+								Institucional</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-114"><a href="https://unb.br/institucional-rodape/historia">História da UnB</a></li>
+								<li class="item-221"><a href="https://unb.br/institucional-rodape/unb-em-numeros">UnB em Números</a>
+								</li>
+								<li class="item-222"><a href="https://unb.br/institucional-rodape/campi">Conheça os campi</a></li>
+								<li class="item-223"><a href="https://unb.br/institucional-rodape/transportes">Como chegar</a></li>
+								<li class="item-224"><a
+										href="https://unb.br/images/Noticias/2021/Documentos/regimento_interno_UnB_web2b.pdf">Estatuto e
+										Regimento</a></li>
+							</ul>
+						</li>
+						<li class="item-280 divider deeper parent"><span class="separator">
+								Administrativo</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-281"><a href="https://unb.br/administrativo-rodape/reitoria">Reitoria</a></li>
+								<li class="item-282"><a href="https://unb.br/administrativo-rodape/vice-reitoria">Vice-Reitoria</a></li>
+								<li class="item-284"><a href="https://unb.br/administrativo-rodape/conselhos-e-camaras">Conselhos e
+										câmaras</a></li>
+								<li class="item-283"><a href="https://unb.br/administrativo-rodape/decanatos">Decanatos</a></li>
+								<li class="item-146"><a href="https://unb.br/administrativo-rodape/secretarias">Secretarias</a></li>
+								<li class="item-285"><a href="http://www.prc.unb.br/">Prefeitura da UnB</a></li>
+							</ul>
+						</li>
+						<li class="item-259 divider deeper parent"><span class="separator">
+								Acadêmico</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-261"><a href="https://unb.br/academico-rodape/faculdades">Faculdades</a></li>
+								<li class="item-262"><a href="https://unb.br/academico-rodape/institutos">Institutos</a></li>
+								<li class="item-260"><a href="https://unb.br/academico-rodape/centros">Centros</a></li>
+								<li class="item-277"><a href="https://unb.br/academico-rodape/educacao-a-distancia">Educação a
+										Distância</a></li>
+								<li class="item-263"><a href="http://int.unb.br/br/institucional/a-int">Assuntos Internacionais</a></li>
+							</ul>
+						</li>
+						<li class="item-122 divider deeper parent"><span class="separator">
+								Serviços</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-142"><a href="https://www.arquivocentral.unb.br/">Arquivo Central</a></li>
+								<li class="item-273"><a href="https://bce.unb.br/">Biblioteca Central</a></li>
+								<li class="item-124"><a href="https://www.editora.unb.br/">Editora UnB</a></li>
+								<li class="item-279"><a href="https://www.etir.unb.br/" target="_blank">Equipe de Tratamento e Resposta
+										a Incidentes Cibernéticos</a></li>
+								<li class="item-145"><a href="http://fal.unb.br/">Fazenda Água Limpa</a></li>
+								<li class="item-138"><a href="http://www.ebserh.gov.br/web/hub-unb">Hospital Universitário</a></li>
+								<li class="item-276"><a href="https://unb.br/servicos-rodape/hospitais-veterinarios">Hospitais
+										Veterinários</a></li>
+								<li class="item-475"><a href="https://ru.unb.br/index.php/cardapio">Restaurante Universitário</a></li>
+							</ul>
+						</li>
+						<li class="item-173 divider deeper parent"><span class="separator">
+								Comunicação</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-291"><a href="https://secom.unb.br/" target="_blank">Atendimento a Jornalistas</a></li>
+								<li class="item-294"><a href="http://noticias.unb.br/secom/123-secom/equipe">Fale com a Secom</a></li>
+								<li class="item-174"><a
+										href="http://noticias.unb.br/secom-unb/2-publicacoes/4012-canais-oficiais">Canais Oficiais</a></li>
+								<li class="item-293"><a href="http://www.marca.unb.br">Marca UnB</a></li>
+								<li class="item-468"><a
+										href="https://unbbr-my.sharepoint.com/:f:/g/personal/design_secom_unb_br/EuuC9Wk-ia9Ilev8-yvLjkIBfROYVRjOCPDW8_BP2JSUlQ">Campanha
+										Institucional 2022</a></li>
+								<li class="item-289"><a href="http://www.unbtv.unb.br/">UnB TV</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- 		</div>
+<div class="clearfix"></div>
+<hr>
+<div class="creditos text-center container">
+	<p>
+		<em>Campus</em>
+		Universitário Darcy Ribeiro, Brasília-DF | CEP 70910-900 | telefone geral 55 61 3107 3300
+		<br>
+		Copyright © 2015 Universidade de Brasília. Todos os direitos reservados.
+	</p>
+</div>
+	</div>
+</footer> -->
+
+				</div>
+				<div class="clearfix"></div>
+				<hr>
+				<div class="container creditos">
+					<div class="prestacao-contas text-center">
+						<div>&nbsp;</div>
+					</div>
+					<div class="copyright text-center">
+						<span><em>Campus</em> Universitário Darcy Ribeiro, </span>
+						<span>Brasília-DF | CEP 70910-900</span>
+						<span><a href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" alt="" target="_blank">Telefones
+								UnB</a></span>
+						<br />
+						<span>Horário de funcionamento: de 2ª a 6ª, das 7h às 23h. Sábado, das 8h às 18h.</span>
+						<br />
+						<span>Copyright © 2022 <a href="http://unb.br" target="_blank" alt="">Universidade de Brasília</a>.</span>
+						<span>Todos os direitos reservados.</span>
+						<br />
+						<span>Melhor visualizado nos navegadores Google Chrome e Mozilla Firefox</span>
+					</div>
+					<div class="acesso-informacao text-center">
+						<div class="media">
+							<a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação" target="_blank">
+								<img src="https://web.unb.br/images/icones/acesso_informacao.png" alt="Acesso à Informação"
+									style="width: 32px;" />
+							</a>
+							<div style="text-align: left;">
+								<h6 style="margin: 0 0 0 0.9rem;">
+									<small>
+										<a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação"
+											target="_blank" style="color: #026e3a !important; font-size: 0.8rem; font-weight: initial;">Acesso
+											à Informação</a>
+									</small>
+								</h6>
+							</div>
+						</div>
+						<h6 style="font-size: 1.8rem; font-weight: inherit; margin: 1.5rem 0.5rem 0.5rem 0;">
+							<a href="https://ouvidoria.unb.br/" title="Ouvidoria UnB" target="_blank">OUVIDORIA<span
+									style="font-weight: bold;">UnB</span></a>
+						</h6>
+						<h6 style="font-size: 1rem; margin: 1.5rem 0.5rem 1.5rem;">
+							<a href="https://unb.br/institucional/transparencia-e-prestacao-de-contas" title="Transparência UnB"
+								target="_blank" style="line-height: 1.3rem;">TRANSPARÊNCIA E PRESTAÇÃO DE CONTAS</a>
+						</h6>
+					</div>
+				</div>
+
+
+
+		</footer>
+		<!--script>
+(function($)
+{
+	
+	$(document).ready(function()
+	{
+		
+		//COOKIES
+		if (localStorage.getItem('unb-cookies') != '1') {
+			$('.cookie_bar').fadeIn();
+			$('.cookie_bar a:first-child').focus();
+		}
+		$('body').on('click', '.cookie_bar button', function() {
+			localStorage.setItem('unb-cookies', '1');
+			$('.cookie_bar').fadeOut();
+		});
+	})
+})(jQuery);
+
+</script-->
+
+
+
+
+
+	</footer>
+
+</body>
+
+</html>
