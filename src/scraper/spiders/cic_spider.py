@@ -17,7 +17,7 @@ class UrlItem(Item):
 class CicSpider(CrawlSpider):
     name = 'cic'
     allowed_domains = ['cic.unb.br']
-    start_urls = ['http://cic.unb.br']
+    start_urls = ['http://cic.unb.br/professores/']
 
     rules = (
         Rule(LinkExtractor(), callback='parse_url'),
