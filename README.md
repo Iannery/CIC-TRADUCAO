@@ -84,3 +84,8 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/professores/109-valves|
 |✅|https://cic.unb.br/professores/110-viniciusrpb|
 |✅|https://cic.unb.br/professores/111-wilsonhe|
+|✅|https://cic.unb.br/professores-aposentados/69-ghedini|
+|✅|https://cic.unb.br/professores-aposentados/126-marcio-da-costa-pereira-brandao|
+|✅|https://cic.unb.br/professores-aposentados/127-jose-carlos-loureiro-ralha|
+|✅|https://cic.unb.br/professores-aposentados/100-prezende|
+
