@@ -21,11 +21,6 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/administracao/chefia|
 |✅|https://cic.unb.br/administracao/coordenacao-de-cursos|
 |✅|https://cic.unb.br/administracao/representacao-em-conselhos-camaras|
-|❌|https://cic.unb.br/component/agenda/agendas|
-|❌|https://cic.unb.br/informacoes/processos-sei|
-|❌|https://cic.unb.br/informacoes/documentos|
-|❌|https://cic.unb.br/informacoes/noticias|
-|❌|https://cic.unb.br/informacoes/faq|
 |✅|https://cic.unb.br/professores|
 |✅|https://cic.unb.br/professores-aposentados|
 |✅|https://cic.unb.br/tecnicos-administrativos|
