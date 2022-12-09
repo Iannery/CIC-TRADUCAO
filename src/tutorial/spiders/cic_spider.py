@@ -17,17 +17,19 @@ class UrlItem(Item):
 class CicSpider(CrawlSpider):
     name = 'cic'
     allowed_domains = ['cic.unb.br']
-    start_urls = ['https://cic.unb.br/ensino/graduacao/']
+    start_urls = ['https://cic.unb.br/informacoes/noticias/', 
+                    'https://cic.unb.br/informacoes/noticias?start=10',
+                    'https://cic.unb.br/informacoes/noticias?start=20',
+                    'https://cic.unb.br/informacoes/noticias?start=30',
+                    'https://cic.unb.br/informacoes/noticias?start=40',
+                    'https://cic.unb.br/informacoes/noticias?start=50',
+    ]
     
 
     rules = (
         Rule(LinkExtractor(allow=
             [
-                'ensino/graduacao/.*',
-                # 'bcc/.*',
-                # 'lic/.*',
-                # 'ec/.*',
-                'em',
+                r'noticias/.*',
             ]
         ), callback='parse_url'),
     )

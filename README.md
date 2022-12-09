@@ -21,11 +21,8 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/administracao/chefia|
 |✅|https://cic.unb.br/administracao/coordenacao-de-cursos|
 |✅|https://cic.unb.br/administracao/representacao-em-conselhos-camaras|
-|❌|https://cic.unb.br/informacoes/noticias/130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme|
-|❌|https://cic.unb.br/informacoes/noticias/131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022|
-|❌|https://cic.unb.br/informacoes/noticias/132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal|
-|❌|https://cic.unb.br/informacoes/processos-sei|
 |❌|https://cic.unb.br/component/agenda/agendas|
+|❌|https://cic.unb.br/informacoes/processos-sei|
 |❌|https://cic.unb.br/informacoes/documentos|
 |❌|https://cic.unb.br/informacoes/noticias|
 |❌|https://cic.unb.br/informacoes/faq|
@@ -98,4 +95,22 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/ec/curriculo|
 |✅|https://cic.unb.br/ec/historico|
 |✅|https://cic.unb.br/em|
+|✅|https://cic.unb.br/informacoes/noticias/|132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal
+|✅|https://cic.unb.br/informacoes/noticias/|131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022
+|✅|https://cic.unb.br/informacoes/noticias/|130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme
+|✅|https://cic.unb.br/informacoes/noticias/129-premio-de-um-dos-melhores-artigos-no-kdmile-2022|
+|✅|https://cic.unb.br/informacoes/noticias/127-premiacao-fase-zero-da-maratona-de-programacao-da-sbc-2022|
+|✅|https://cic.unb.br/informacoes/noticias/126-unb-na-maratona-de-programacao|
+|✅|https://cic.unb.br/informacoes/noticias/125-tcc-premiado-em-primeiro-lugar-no-cbsoft-2022|
+|✅|https://cic.unb.br/informacoes/noticias/|124-premio-de-melhor-artigo-no-iii-workshop-de-trabalhos-de-alunos-de-graduacao-wtag-xxxvii-simposio-brasileiro-de-bancos-de-dados-sbbd-2022
+|✅|https://cic.unb.br/informacoes/noticias/|123-trabalho-selecionado-no-concurso-de-trabalhos-de-iniciacao-cientifica-do-xxxvi-simposio-brasileiro-de-engenharia-de-software-sbes-2022
+|✅|https://cic.unb.br/informacoes/noticias/|119-lancamento-de-livro-no-tema-de-agentes-inteligentes-aplicado-a-area-medica
+|✅|https://cic.unb.br/informacoes/noticias/118-medalhas-na-olimpiada-brasileira-de-informatica|
+|✅|https://cic.unb.br/informacoes/noticias/115-aluno-do-cic-e-selecionado-para-programa-de-pesquisa-no-mit|
+|✅|https://cic.unb.br/informacoes/noticias/|112-concurso-de-teses-e-dissertacoes-em-sistemas-de-informacao-ctdsi-2022-3-lugar
+|✅|https://cic.unb.br/informacoes/noticias/102-unb-e-campea-regional-da-maratona-de-programacao|
+|✅|https://cic.unb.br/informacoes/noticias/80-alunos-do-cic-sao-medalhistas-da-obi2021|
+|✅|https://cic.unb.br/informacoes/noticias/79-melhor-artigo-no-wei-da-sociedade-brasileira-de-computacao|
+|✅|https://cic.unb.br/informacoes/noticias/78-entre-os-melhores-do-mundial-de-programacao|
+
 
