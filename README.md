@@ -88,4 +88,14 @@ Links presentes em diretórios:
 |✅|https://cic.unb.br/professores-aposentados/126-marcio-da-costa-pereira-brandao|
 |✅|https://cic.unb.br/professores-aposentados/127-jose-carlos-loureiro-ralha|
 |✅|https://cic.unb.br/professores-aposentados/100-prezende|
+|✅|https://cic.unb.br/bcc/ppc|
+|✅|https://cic.unb.br/bcc/historico|
+|✅|https://cic.unb.br/bcc/curriculo|
+|✅|https://cic.unb.br/lic/historico|
+|✅|https://cic.unb.br/lic/ppc|
+|✅|https://cic.unb.br/lic/curriculo|
+|✅|https://cic.unb.br/ec/ppc|
+|✅|https://cic.unb.br/ec/curriculo|
+|✅|https://cic.unb.br/ec/historico|
+|✅|https://cic.unb.br/em|
 

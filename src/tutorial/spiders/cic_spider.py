@@ -17,11 +17,19 @@ class UrlItem(Item):
 class CicSpider(CrawlSpider):
     name = 'cic'
     allowed_domains = ['cic.unb.br']
-    start_urls = ['http://cic.unb.br/professores-aposentados/']
+    start_urls = ['https://cic.unb.br/ensino/graduacao/']
     
 
     rules = (
-        Rule(LinkExtractor(allow=r'professores-aposentados/.*'), callback='parse_url'),
+        Rule(LinkExtractor(allow=
+            [
+                'ensino/graduacao/.*',
+                # 'bcc/.*',
+                # 'lic/.*',
+                # 'ec/.*',
+                'em',
+            ]
+        ), callback='parse_url'),
     )
     
     # put all links in a general csv file and each body in a specific html file called pt_BR inside a folder with the same name as the link
