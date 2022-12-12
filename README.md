@@ -1,107 +1,111 @@
 ## Tradução CIC
 
+Este projeto foi desenvolvido para a tradução do site do CIC, porém, pode ser utilizado para qualquer outro site que contenha links para outros sites.
+
+**Atenção** - As notícias traduzidas não estão disponíveis por meio dos botões dentro do site, apenas por meio dos links abaixo.
+
 Links presentes em diretórios:
 Endereço Traduzido|Traduzido|Endereço|
-| :--- |:----:| :--- |
-|[Link Traduzido](https://cic-traducao.vercel.app/en_US.html)| ✅ |https://cic.unb.br/|
-|[Link Traduzido](https://cic-traducao.vercel.app/historia/en_US.html)|✅|https://cic.unb.br/o-cic/historia|
-|[Link Traduzido](https://cic-traducao.vercel.app/infraestrutura/en_US.html)|✅|https://cic.unb.br/o-cic/infraestrutura|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/en_US.html)|✅|https://cic.unb.br/o-cic/pessoas|
-|[Link Traduzido](https://cic-traducao.vercel.app/marca-cic/en_US.html)|✅|https://cic.unb.br/o-cic/marca-cic|
-|[Link Traduzido](https://cic-traducao.vercel.app/fale-conosco/en_US.html)|✅|https://cic.unb.br/o-cic/fale-conosco|
-|[Link Traduzido](https://cic-traducao.vercel.app/ingressante/en_US.html)|✅|https://cic.unb.br/ensino/ingressante|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/en_US.html)|✅|https://cic.unb.br/ensino/graduacao|
-|[Link Traduzido](https://cic-traducao.vercel.app/pos-graduacao/en_US.html)|✅|https://cic.unb.br/ensino/pos-graduacao|
-|[Link Traduzido](https://cic-traducao.vercel.app/grupos-de-pesquisa/en_US.html)|✅|https://cic.unb.br/pesquisa/grupos-de-pesquisa|
-|[Link Traduzido](https://cic-traducao.vercel.app/cooperacoes/en_US.html)|✅|https://cic.unb.br/pesquisa/cooperacoes|
-|[Link Traduzido](https://cic-traducao.vercel.app/universitaria/en_US.html)|✅|https://cic.unb.br/extensao/universitaria|
-|[Link Traduzido](https://cic-traducao.vercel.app/extensao-projetos/en_US.html)|✅|https://cic.unb.br/extensao/extensao-projetos|
-|[Link Traduzido](https://cic-traducao.vercel.app/chefia/en_US.html)|✅|https://cic.unb.br/administracao/chefia|
-|[Link Traduzido](https://cic-traducao.vercel.app/coordenacao-de-cursos/en_US.html)|✅|https://cic.unb.br/administracao/coordenacao-de-cursos|
-|[Link Traduzido](https://cic-traducao.vercel.app/representacao-em-conselhos-camaras/en_US.html)|✅|https://cic.unb.br/administracao/representacao-em-conselhos-camaras|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/en_US.html)|✅|https://cic.unb.br/professores|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-aposentados/en_US.html)|✅|https://cic.unb.br/professores-aposentados|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/tecnicos-administrativos/en_US.html)|✅|https://cic.unb.br/tecnicos-administrativos|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/tecnicos-apoio/en_US.html)|✅|https://cic.unb.br/tecnicos-apoio|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/estagiarios/en_US.html)|✅|https://cic.unb.br/estagiarios|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-page-2/en_US.html)|✅|https://cic.unb.br/professores?start=20|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-page-3/en_US.html)|✅|https://cic.unb.br/professores?start=40|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/58-alves/en_US.html)|✅|https://cic.unb.br/professores/58-alves|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/62-aleteia/en_US.html)|✅|https://cic.unb.br/professores/62-aleteia|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/64-andred/en_US.html)|✅|https://cic.unb.br/professores/64-andred|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/65-macchiavello/en_US.html)|✅|https://cic.unb.br/professores/65-macchiavello|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/66-camilodorea/en_US.html)|✅|https://cic.unb.br/professores/66-camilodorea|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/67-ckoike/en_US.html)|✅|https://cic.unb.br/professores/67-ckoike|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/68-carlacastanho/en_US.html)|✅|https://cic.unb.br/professores/68-carlacastanho|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/70-nalon/en_US.html)|✅|https://cic.unb.br/professores/70-nalon|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/71-dibio/en_US.html)|✅|https://cic.unb.br/professores/71-dibio|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/72-ishikawa/en_US.html)|✅|https://cic.unb.br/professores/72-ishikawa|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/73-ednacanedo/en_US.html)|✅|https://cic.unb.br/professores/73-ednacanedo|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/74-alchieri/en_US.html)|✅|https://cic.unb.br/professores/74-alchieri|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/75-ferlima/en_US.html)|✅|https://cic.unb.br/professores/75-ferlima|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/76-nando/en_US.html)|✅|https://cic.unb.br/professores/76-nando|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/77-fbvidal/en_US.html)|✅|https://cic.unb.br/professores/77-fbvidal|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/78-flaviomoura/en_US.html)|✅|https://cic.unb.br/professores/78-flaviomoura|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/79-genaina/en_US.html)|✅|https://cic.unb.br/professores/79-genaina|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/80-geraldof/en_US.html)|✅|https://cic.unb.br/professores/80-geraldof|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/81-gmnobrega/en_US.html)|✅|https://cic.unb.br/professores/81-gmnobrega|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/82-gnramos/en_US.html)|✅|https://cic.unb.br/professores/82-gnramos|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/83-bordim/en_US.html)|✅|https://cic.unb.br/professores/83-bordim|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/84-jancorrea/en_US.html)|✅|https://cic.unb.br/professores/84-jancorrea|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/85-gondim/en_US.html)|✅|https://cic.unb.br/professores/85-gondim|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/86-lucero/en_US.html)|✅|https://cic.unb.br/professores/86-lucero|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/87-jhcf/en_US.html)|✅|https://cic.unb.br/professores/87-jhcf|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/88-llleite/en_US.html)|✅|https://cic.unb.br/professores/88-llleite|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/89-weigang/en_US.html)|✅|https://cic.unb.br/professores/89-weigang|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/90-luis-garcia/en_US.html)|✅|https://cic.unb.br/professores/90-luis-garcia|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/91-mgmandelli/en_US.html)|✅|https://cic.unb.br/professores/91-mgmandelli|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/92-mladeira/en_US.html)|✅|https://cic.unb.br/professores/92-mladeira|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/93-marcelo-marotta/en_US.html)|✅|https://cic.unb.br/professores/93-marcelo-marotta|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/94-mfcaetano/en_US.html)|✅|https://cic.unb.br/professores/94-mfcaetano|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/95-lamar/en_US.html)|✅|https://cic.unb.br/professores/95-lamar|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/96-fatimabrandao/en_US.html)|✅|https://cic.unb.br/professores/96-fatimabrandao|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/97-mariaemilia/en_US.html)|✅|https://cic.unb.br/professores/97-mariaemilia|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/98-mholanda/en_US.html)|✅|https://cic.unb.br/professores/98-mholanda|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/99-ayala/en_US.html)|✅|https://cic.unb.br/professores/99-ayala|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/101-pedroberger/en_US.html)|✅|https://cic.unb.br/professores/101-pedroberger|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/102-pris/en_US.html)|✅|https://cic.unb.br/professores/102-pris|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/103-queiroz/en_US.html)|✅|https://cic.unb.br/professores/103-queiroz|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/104-jacobi/en_US.html)|✅|https://cic.unb.br/professores/104-jacobi|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/105-roberta-oliveira/en_US.html)|✅|https://cic.unb.br/professores/105-roberta-oliveira|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/106-rbonifacio/en_US.html)|✅|https://cic.unb.br/professores/106-rbonifacio|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/107-teodecampos/en_US.html)|✅|https://cic.unb.br/professores/107-teodecampos|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/108-thiagodepaulo/en_US.html)|✅|https://cic.unb.br/professores/108-thiagodepaulo|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/109-valves/en_US.html)|✅|https://cic.unb.br/professores/109-valves|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/110-viniciusrpb/en_US.html)|✅|https://cic.unb.br/professores/110-viniciusrpb|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores/111-wilsonhe/en_US.html)|✅|https://cic.unb.br/professores/111-wilsonhe|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-aposentados/69-ghedini/en_US.html)|✅|https://cic.unb.br/professores-aposentados/69-ghedini|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-aposentados/126-marcio-da-costa-pereira-brandao/en_US.html)|✅|https://cic.unb.br/professores-aposentados/126-marcio-da-costa-pereira-brandao|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-aposentados/127-jose-carlos-loureiro-ralha/en_US.html)|✅|https://cic.unb.br/professores-aposentados/127-jose-carlos-loureiro-ralha|
-|[Link Traduzido](https://cic-traducao.vercel.app/pessoas/professores-aposentados/100-prezende/en_US.html)|✅|https://cic.unb.br/professores-aposentados/100-prezende|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/bcc/ppc/en_US.html)|✅|https://cic.unb.br/bcc/ppc|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/bcc/historico/en_US.html)|✅|https://cic.unb.br/bcc/historico|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/bcc/curriculo/en_US.html)|✅|https://cic.unb.br/bcc/curriculo|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/lic/historico/en_US.html)|✅|https://cic.unb.br/lic/historico|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/lic/ppc/en_US.html)|✅|https://cic.unb.br/lic/ppc|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/lic/curriculo/en_US.html)|✅|https://cic.unb.br/lic/curriculo|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/ec/ppc/en_US.html)|✅|https://cic.unb.br/ec/ppc|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/ec/curriculo/en_US.html)|✅|https://cic.unb.br/ec/curriculo|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/ec/historico/en_US.html)|✅|https://cic.unb.br/ec/historico|
-|[Link Traduzido](https://cic-traducao.vercel.app/graduacao/em/en_US.html)|✅|https://cic.unb.br/em|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/129-premio-de-um-dos-melhores-artigos-no-kdmile-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/129-premio-de-um-dos-melhores-artigos-no-kdmile-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/127-premiacao-fase-zero-da-maratona-de-programacao-da-sbc-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/127-premiacao-fase-zero-da-maratona-de-programacao-da-sbc-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/126-unb-na-maratona-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/126-unb-na-maratona-de-programacao|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/125-tcc-premiado-em-primeiro-lugar-no-cbsoft-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/125-tcc-premiado-em-primeiro-lugar-no-cbsoft-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/124-premio-de-melhor-artigo-no-iii-workshop-de-trabalhos-de-alunos-de-graduacao-wtag-xxxvii-simposio-brasileiro-de-bancos-de-dados-sbbd-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/124-premio-de-melhor-artigo-no-iii-workshop-de-trabalhos-de-alunos-de-graduacao-wtag-xxxvii-simposio-brasileiro-de-bancos-de-dados-sbbd-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/123-trabalho-selecionado-no-concurso-de-trabalhos-de-iniciacao-cientifica-do-xxxvi-simposio-brasileiro-de-engenharia-de-software-sbes-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/123-trabalho-selecionado-no-concurso-de-trabalhos-de-iniciacao-cientifica-do-xxxvi-simposio-brasileiro-de-engenharia-de-software-sbes-2022|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/119-lancamento-de-livro-no-tema-de-agentes-inteligentes-aplicado-a-area-medica/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/119-lancamento-de-livro-no-tema-de-agentes-inteligentes-aplicado-a-area-medica|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/118-medalhas-na-olimpiada-brasileira-de-informatica/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/118-medalhas-na-olimpiada-brasileira-de-informatica|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/115-aluno-do-cic-e-selecionado-para-programa-de-pesquisa-no-mit/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/115-aluno-do-cic-e-selecionado-para-programa-de-pesquisa-no-mit|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/112-concurso-de-teses-e-dissertacoes-em-sistemas-de-informacao-ctdsi-2022-3-lugar/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/112-concurso-de-teses-e-dissertacoes-em-sistemas-de-informacao-ctdsi-2022-3-lugar|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/102-unb-e-campea-regional-da-maratona-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/102-unb-e-campea-regional-da-maratona-de-programacao|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/80-alunos-do-cic-sao-medalhistas-da-obi2021/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/80-alunos-do-cic-sao-medalhistas-da-obi2021|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/79-melhor-artigo-no-wei-da-sociedade-brasileira-de-computacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/79-melhor-artigo-no-wei-da-sociedade-brasileira-de-computacao|
-|[Link Traduzido](https://cic-traducao.vercel.app/noticias/78-entre-os-melhores-do-mundial-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/78-entre-os-melhores-do-mundial-de-programacao|
+| :----: |:----:| :--- |
+|[Link](https://cic-traducao.vercel.app/en_US.html)|✅|https://cic.unb.br/|
+|[Link](https://cic-traducao.vercel.app/historia/en_US.html)|✅|https://cic.unb.br/o-cic/historia|
+|[Link](https://cic-traducao.vercel.app/infraestrutura/en_US.html)|✅|https://cic.unb.br/o-cic/infraestrutura|
+|[Link](https://cic-traducao.vercel.app/pessoas/en_US.html)|✅|https://cic.unb.br/o-cic/pessoas|
+|[Link](https://cic-traducao.vercel.app/marca-cic/en_US.html)|✅|https://cic.unb.br/o-cic/marca-cic|
+|[Link](https://cic-traducao.vercel.app/fale-conosco/en_US.html)|✅|https://cic.unb.br/o-cic/fale-conosco|
+|[Link](https://cic-traducao.vercel.app/ingressante/en_US.html)|✅|https://cic.unb.br/ensino/ingressante|
+|[Link](https://cic-traducao.vercel.app/graduacao/en_US.html)|✅|https://cic.unb.br/ensino/graduacao|
+|[Link](https://cic-traducao.vercel.app/pos-graduacao/en_US.html)|✅|https://cic.unb.br/ensino/pos-graduacao|
+|[Link](https://cic-traducao.vercel.app/grupos-de-pesquisa/en_US.html)|✅|https://cic.unb.br/pesquisa/grupos-de-pesquisa|
+|[Link](https://cic-traducao.vercel.app/cooperacoes/en_US.html)|✅|https://cic.unb.br/pesquisa/cooperacoes|
+|[Link](https://cic-traducao.vercel.app/universitaria/en_US.html)|✅|https://cic.unb.br/extensao/universitaria|
+|[Link](https://cic-traducao.vercel.app/extensao-projetos/en_US.html)|✅|https://cic.unb.br/extensao/extensao-projetos|
+|[Link](https://cic-traducao.vercel.app/chefia/en_US.html)|✅|https://cic.unb.br/administracao/chefia|
+|[Link](https://cic-traducao.vercel.app/coordenacao-de-cursos/en_US.html)|✅|https://cic.unb.br/administracao/coordenacao-de-cursos|
+|[Link](https://cic-traducao.vercel.app/representacao-em-conselhos-camaras/en_US.html)|✅|https://cic.unb.br/administracao/representacao-em-conselhos-camaras|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/en_US.html)|✅|https://cic.unb.br/professores|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-aposentados/en_US.html)|✅|https://cic.unb.br/professores-aposentados|
+|[Link](https://cic-traducao.vercel.app/pessoas/tecnicos-administrativos/en_US.html)|✅|https://cic.unb.br/tecnicos-administrativos|
+|[Link](https://cic-traducao.vercel.app/pessoas/tecnicos-apoio/en_US.html)|✅|https://cic.unb.br/tecnicos-apoio|
+|[Link](https://cic-traducao.vercel.app/pessoas/estagiarios/en_US.html)|✅|https://cic.unb.br/estagiarios|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-page-2/en_US.html)|✅|https://cic.unb.br/professores?start=20|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-page-3/en_US.html)|✅|https://cic.unb.br/professores?start=40|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/58-alves/en_US.html)|✅|https://cic.unb.br/professores/58-alves|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/62-aleteia/en_US.html)|✅|https://cic.unb.br/professores/62-aleteia|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/64-andred/en_US.html)|✅|https://cic.unb.br/professores/64-andred|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/65-macchiavello/en_US.html)|✅|https://cic.unb.br/professores/65-macchiavello|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/66-camilodorea/en_US.html)|✅|https://cic.unb.br/professores/66-camilodorea|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/67-ckoike/en_US.html)|✅|https://cic.unb.br/professores/67-ckoike|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/68-carlacastanho/en_US.html)|✅|https://cic.unb.br/professores/68-carlacastanho|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/70-nalon/en_US.html)|✅|https://cic.unb.br/professores/70-nalon|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/71-dibio/en_US.html)|✅|https://cic.unb.br/professores/71-dibio|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/72-ishikawa/en_US.html)|✅|https://cic.unb.br/professores/72-ishikawa|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/73-ednacanedo/en_US.html)|✅|https://cic.unb.br/professores/73-ednacanedo|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/74-alchieri/en_US.html)|✅|https://cic.unb.br/professores/74-alchieri|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/75-ferlima/en_US.html)|✅|https://cic.unb.br/professores/75-ferlima|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/76-nando/en_US.html)|✅|https://cic.unb.br/professores/76-nando|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/77-fbvidal/en_US.html)|✅|https://cic.unb.br/professores/77-fbvidal|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/78-flaviomoura/en_US.html)|✅|https://cic.unb.br/professores/78-flaviomoura|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/79-genaina/en_US.html)|✅|https://cic.unb.br/professores/79-genaina|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/80-geraldof/en_US.html)|✅|https://cic.unb.br/professores/80-geraldof|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/81-gmnobrega/en_US.html)|✅|https://cic.unb.br/professores/81-gmnobrega|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/82-gnramos/en_US.html)|✅|https://cic.unb.br/professores/82-gnramos|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/83-bordim/en_US.html)|✅|https://cic.unb.br/professores/83-bordim|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/84-jancorrea/en_US.html)|✅|https://cic.unb.br/professores/84-jancorrea|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/85-gondim/en_US.html)|✅|https://cic.unb.br/professores/85-gondim|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/86-lucero/en_US.html)|✅|https://cic.unb.br/professores/86-lucero|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/87-jhcf/en_US.html)|✅|https://cic.unb.br/professores/87-jhcf|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/88-llleite/en_US.html)|✅|https://cic.unb.br/professores/88-llleite|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/89-weigang/en_US.html)|✅|https://cic.unb.br/professores/89-weigang|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/90-luis-garcia/en_US.html)|✅|https://cic.unb.br/professores/90-luis-garcia|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/91-mgmandelli/en_US.html)|✅|https://cic.unb.br/professores/91-mgmandelli|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/92-mladeira/en_US.html)|✅|https://cic.unb.br/professores/92-mladeira|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/93-marcelo-marotta/en_US.html)|✅|https://cic.unb.br/professores/93-marcelo-marotta|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/94-mfcaetano/en_US.html)|✅|https://cic.unb.br/professores/94-mfcaetano|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/95-lamar/en_US.html)|✅|https://cic.unb.br/professores/95-lamar|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/96-fatimabrandao/en_US.html)|✅|https://cic.unb.br/professores/96-fatimabrandao|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/97-mariaemilia/en_US.html)|✅|https://cic.unb.br/professores/97-mariaemilia|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/98-mholanda/en_US.html)|✅|https://cic.unb.br/professores/98-mholanda|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/99-ayala/en_US.html)|✅|https://cic.unb.br/professores/99-ayala|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/101-pedroberger/en_US.html)|✅|https://cic.unb.br/professores/101-pedroberger|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/102-pris/en_US.html)|✅|https://cic.unb.br/professores/102-pris|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/103-queiroz/en_US.html)|✅|https://cic.unb.br/professores/103-queiroz|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/104-jacobi/en_US.html)|✅|https://cic.unb.br/professores/104-jacobi|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/105-roberta-oliveira/en_US.html)|✅|https://cic.unb.br/professores/105-roberta-oliveira|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/106-rbonifacio/en_US.html)|✅|https://cic.unb.br/professores/106-rbonifacio|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/107-teodecampos/en_US.html)|✅|https://cic.unb.br/professores/107-teodecampos|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/108-thiagodepaulo/en_US.html)|✅|https://cic.unb.br/professores/108-thiagodepaulo|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/109-valves/en_US.html)|✅|https://cic.unb.br/professores/109-valves|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/110-viniciusrpb/en_US.html)|✅|https://cic.unb.br/professores/110-viniciusrpb|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores/111-wilsonhe/en_US.html)|✅|https://cic.unb.br/professores/111-wilsonhe|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-aposentados/69-ghedini/en_US.html)|✅|https://cic.unb.br/professores-aposentados/69-ghedini|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-aposentados/126-marcio-da-costa-pereira-brandao/en_US.html)|✅|https://cic.unb.br/professores-aposentados/126-marcio-da-costa-pereira-brandao|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-aposentados/127-jose-carlos-loureiro-ralha/en_US.html)|✅|https://cic.unb.br/professores-aposentados/127-jose-carlos-loureiro-ralha|
+|[Link](https://cic-traducao.vercel.app/pessoas/professores-aposentados/100-prezende/en_US.html)|✅|https://cic.unb.br/professores-aposentados/100-prezende|
+|[Link](https://cic-traducao.vercel.app/graduacao/bcc/ppc/en_US.html)|✅|https://cic.unb.br/bcc/ppc|
+|[Link](https://cic-traducao.vercel.app/graduacao/bcc/historico/en_US.html)|✅|https://cic.unb.br/bcc/historico|
+|[Link](https://cic-traducao.vercel.app/graduacao/bcc/curriculo/en_US.html)|✅|https://cic.unb.br/bcc/curriculo|
+|[Link](https://cic-traducao.vercel.app/graduacao/lic/historico/en_US.html)|✅|https://cic.unb.br/lic/historico|
+|[Link](https://cic-traducao.vercel.app/graduacao/lic/ppc/en_US.html)|✅|https://cic.unb.br/lic/ppc|
+|[Link](https://cic-traducao.vercel.app/graduacao/lic/curriculo/en_US.html)|✅|https://cic.unb.br/lic/curriculo|
+|[Link](https://cic-traducao.vercel.app/graduacao/ec/ppc/en_US.html)|✅|https://cic.unb.br/ec/ppc|
+|[Link](https://cic-traducao.vercel.app/graduacao/ec/curriculo/en_US.html)|✅|https://cic.unb.br/ec/curriculo|
+|[Link](https://cic-traducao.vercel.app/graduacao/ec/historico/en_US.html)|✅|https://cic.unb.br/ec/historico|
+|[Link](https://cic-traducao.vercel.app/graduacao/em/en_US.html)|✅|https://cic.unb.br/em|
+|[Link](https://cic-traducao.vercel.app/noticias/132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/132-a-professora-edna-dias-canedo-recebeu-o-top-reviewer-award-2021-do-information-and-software-technology-journal|
+|[Link](https://cic-traducao.vercel.app/noticias/131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/131-alunos-da-unb-no-quadro-de-medalhas-da-olimpiada-brasileira-de-informatica-obi-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/130-resultado-excepcional-na-competicao-internacional-de-programacao-ieeextreme|
+|[Link](https://cic-traducao.vercel.app/noticias/129-premio-de-um-dos-melhores-artigos-no-kdmile-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/129-premio-de-um-dos-melhores-artigos-no-kdmile-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/127-premiacao-fase-zero-da-maratona-de-programacao-da-sbc-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/127-premiacao-fase-zero-da-maratona-de-programacao-da-sbc-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/126-unb-na-maratona-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/126-unb-na-maratona-de-programacao|
+|[Link](https://cic-traducao.vercel.app/noticias/125-tcc-premiado-em-primeiro-lugar-no-cbsoft-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/125-tcc-premiado-em-primeiro-lugar-no-cbsoft-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/124-premio-de-melhor-artigo-no-iii-workshop-de-trabalhos-de-alunos-de-graduacao-wtag-xxxvii-simposio-brasileiro-de-bancos-de-dados-sbbd-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/124-premio-de-melhor-artigo-no-iii-workshop-de-trabalhos-de-alunos-de-graduacao-wtag-xxxvii-simposio-brasileiro-de-bancos-de-dados-sbbd-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/123-trabalho-selecionado-no-concurso-de-trabalhos-de-iniciacao-cientifica-do-xxxvi-simposio-brasileiro-de-engenharia-de-software-sbes-2022/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/123-trabalho-selecionado-no-concurso-de-trabalhos-de-iniciacao-cientifica-do-xxxvi-simposio-brasileiro-de-engenharia-de-software-sbes-2022|
+|[Link](https://cic-traducao.vercel.app/noticias/119-lancamento-de-livro-no-tema-de-agentes-inteligentes-aplicado-a-area-medica/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/119-lancamento-de-livro-no-tema-de-agentes-inteligentes-aplicado-a-area-medica|
+|[Link](https://cic-traducao.vercel.app/noticias/118-medalhas-na-olimpiada-brasileira-de-informatica/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/118-medalhas-na-olimpiada-brasileira-de-informatica|
+|[Link](https://cic-traducao.vercel.app/noticias/115-aluno-do-cic-e-selecionado-para-programa-de-pesquisa-no-mit/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/115-aluno-do-cic-e-selecionado-para-programa-de-pesquisa-no-mit|
+|[Link](https://cic-traducao.vercel.app/noticias/112-concurso-de-teses-e-dissertacoes-em-sistemas-de-informacao-ctdsi-2022-3-lugar/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/112-concurso-de-teses-e-dissertacoes-em-sistemas-de-informacao-ctdsi-2022-3-lugar|
+|[Link](https://cic-traducao.vercel.app/noticias/102-unb-e-campea-regional-da-maratona-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/102-unb-e-campea-regional-da-maratona-de-programacao|
+|[Link](https://cic-traducao.vercel.app/noticias/80-alunos-do-cic-sao-medalhistas-da-obi2021/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/80-alunos-do-cic-sao-medalhistas-da-obi2021|
+|[Link](https://cic-traducao.vercel.app/noticias/79-melhor-artigo-no-wei-da-sociedade-brasileira-de-computacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/79-melhor-artigo-no-wei-da-sociedade-brasileira-de-computacao|
+|[Link](https://cic-traducao.vercel.app/noticias/78-entre-os-melhores-do-mundial-de-programacao/en_US.html)|✅|https://cic.unb.br/informacoes/noticias/78-entre-os-melhores-do-mundial-de-programacao|
