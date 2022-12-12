@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" dir="ltr">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  	<base href="https://cic.unb.br/informacoes/documentos" />
+	<base href="https://cic.unb.br/informacoes/documentos" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Departamento de Ciências da Computação - CIC - Documentos - Documentos</title>
 	<link href="/templates/unb-unidades/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -15,7 +16,8 @@
 	<link href="/templates/unb-unidades/css/menu.css" rel="stylesheet" type="text/css" />
 	<link href="/plugins/system/vembed/vembed.css" rel="stylesheet" type="text/css" />
 	<link href="/media/jfontsize/css/jfontsize.css" rel="stylesheet" type="text/css" />
-	<script type="application/json" class="joomla-script-options new">{"csrf.token":"0c6e430fcd699fb59c742b2ef315df96","system.paths":{"root":"","base":""}}</script>
+	<script type="application/json"
+		class="joomla-script-options new">{"csrf.token":"0c6e430fcd699fb59c742b2ef315df96","system.paths":{"root":"","base":""}}</script>
 	<script src="/media/jui/js/jquery.min.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
 	<script src="/media/jui/js/jquery-migrate.min.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
 	<script src="/media/system/js/mootools-core.js?0d827e97f1d4715e7184b33e2dd18f39" type="text/javascript"></script>
@@ -27,37 +29,37 @@
 	<script src="/media/jfontsize/js/jquery.jfontsize-1.0.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 
-		jQuery(document).ready(function(){
-			
+		jQuery(document).ready(function () {
+
 			jQuery("#phModalPlay").on("hidden.bs.modal", function (e) {
 				jQuery("#phModalPlay iframe").attr("src", jQuery("#phModalPlay iframe").attr("src"));
-				jQuery("audio").each(function(){this.pause();this.currentTime = 0;});
-				jQuery("video").each(function(){this.pause();this.currentTime = 0;});
+				jQuery("audio").each(function () { this.pause(); this.currentTime = 0; });
+				jQuery("video").each(function () { this.pause(); this.currentTime = 0; });
 			});
-			
-			
+
+
 			jQuery(".pd-modal-button").on("click", function () {
-				var $target	= jQuery(this).data("target");
-				var $href 	= jQuery(this).data("href");
-				var $body	= $target + "Body";
-				var $dialog	= $target + "Dialog";
-				var $height	= jQuery(this).data("height");
-				var $width	= jQuery(this).data("width");
-				var $heightD= jQuery(this).data("height-dialog");
-				var $widthD	= jQuery(this).data("width-dialog");
-				var $type	= jQuery(this).data("type");
+				var $target = jQuery(this).data("target");
+				var $href = jQuery(this).data("href");
+				var $body = $target + "Body";
+				var $dialog = $target + "Dialog";
+				var $height = jQuery(this).data("height");
+				var $width = jQuery(this).data("width");
+				var $heightD = jQuery(this).data("height-dialog");
+				var $widthD = jQuery(this).data("width-dialog");
+				var $type = jQuery(this).data("type");
 				jQuery($body).css("height", $height);
 				jQuery($target).css("width", $width);
 				jQuery($body).css("overflow-y", "auto");
 				jQuery($dialog).css("height", $heightD);
 				jQuery($dialog).css("width", $widthD);
-				
+
 
 				if ($type == "image") {
 					jQuery($body).html('<img class="img-responsive" src="' + $href + '" />');
 				} else if ($type == "document") {
-					$widthD = $widthD -50;
-					$heightD = $heightD -40;
+					$widthD = $widthD - 50;
+					$heightD = $heightD - 40;
 					jQuery($body).html('<object type="application/pdf" data="' + $href + '" width="' + $widthD + '" height="' + $heightD + '" ></object>');
 				} else {
 					jQuery($body).load($href, function (response, status, xhr) {
@@ -68,13 +70,12 @@
 				}
 			});
 		});
-		jQuery(function($) {
+		jQuery(function ($) {
 			SqueezeBox.initialize({});
 			initSqueezeBox();
 			$(document).on('subform-row-add', initSqueezeBox);
 
-			function initSqueezeBox(event, container)
-			{
+			function initSqueezeBox(event, container) {
 				SqueezeBox.assign($(container || document).find('a.pd-modal-button').get(), {
 					parse: 'rel'
 				});
@@ -87,11 +88,9 @@
 
 		// Add extra modal close functionality for tinyMCE-based editors
 		document.onreadystatechange = function () {
-			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
-			{
-				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
-				{
-					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE) {
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined') {
+					window.jModalClose_no_tinyMCE = typeof (jModalClose) == 'function' ? jModalClose : false;
 
 					jModalClose = function () {
 						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
@@ -99,115 +98,138 @@
 					};
 				}
 
-				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
-				{
-					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
-					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined') {
+					if (typeof (SqueezeBox) == 'undefined') SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof (SqueezeBox.close) == 'function' ? SqueezeBox.close : false;
 
 					SqueezeBox.close = function () {
-						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						if (window.SqueezeBoxClose_no_tinyMCE) window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
 						tinyMCE.activeEditor.windowManager.close();
 					};
 				}
 			}
 		};
-		
+
 	</script>
 	<script type="text/javascript" src="https://cic.unb.br/media/com_phocadownload/js/overlib/overlib_mini.js"></script>
-	<style type="text/css"> 
- #sbox-window.phocadownloadplaywindow   {background-color:#fff;padding:2px} 
- #sbox-overlay.phocadownloadplayoverlay  {background-color:#000;} 
- </style>
-	<style type="text/css"> 
- #sbox-window.phocadownloadpreviewwindow   {background-color:#fff;padding:2px} 
- #sbox-overlay.phocadownloadpreviewoverlay  {background-color:#000;} 
- </style>
-	<script type="text/javascript">
-	(function ($) {
-		$().ready(function () {
-			 $('body').jfontsize({
-			     btnMinusClasseId: '#jfontsize-minus',
-			     btnDefaultClasseId: '#jfontsize-default',
-			     btnPlusClasseId: '#jfontsize-plus',
-			     btnMinusMaxHits: 10,
-			     btnPlusMaxHits: 10,
-			     sizeChange: 1
-			 });
-		});
-	})(jQuery)
-</script>
+	<style type="text/css">
+		#sbox-window.phocadownloadplaywindow {
+			background-color: #fff;
+			padding: 2px
+		}
 
-				<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-		<style type="text/css">
-			h1,h2,h3,h4,h5,h6,.site-title{
-				font-family: 'Open Sans', sans-serif;
-			}
-		</style>
-				<style type="text/css">
-		body.site
-		{
+		#sbox-overlay.phocadownloadplayoverlay {
+			background-color: #000;
+		}
+	</style>
+	<style type="text/css">
+		#sbox-window.phocadownloadpreviewwindow {
+			background-color: #fff;
+			padding: 2px
+		}
+
+		#sbox-overlay.phocadownloadpreviewoverlay {
+			background-color: #000;
+		}
+	</style>
+	<script type="text/javascript">
+		(function ($) {
+			$().ready(function () {
+				$('body').jfontsize({
+					btnMinusClasseId: '#jfontsize-minus',
+					btnDefaultClasseId: '#jfontsize-default',
+					btnPlusClasseId: '#jfontsize-plus',
+					btnMinusMaxHits: 10,
+					btnPlusMaxHits: 10,
+					sizeChange: 1
+				});
+			});
+		})(jQuery)
+	</script>
+
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<style type="text/css">
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.site-title {
+			font-family: 'Open Sans', sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		body.site {
 			border-top: 3px solid #0088cc;
-			background-color: #f4f6f7		}
-		a
-		{
+			background-color: #f4f6f7
+		}
+
+		a {
 			color: #0088cc;
 		}
-		.navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
-		.btn-primary
-		{
+
+		.navbar-inner,
+		.nav-list>.active>a,
+		.nav-list>.active>a:hover,
+		.dropdown-menu li>a:hover,
+		.dropdown-menu .active>a,
+		.dropdown-menu .active>a:hover,
+		.nav-pills>.active>a,
+		.nav-pills>.active>a:hover,
+		.btn-primary {
 			background: #0088cc;
 		}
-		.navbar-inner
-		{
+
+		.navbar-inner {
 			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
 			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
 			box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
 		}
-
 	</style>
-		  	<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="/media/jui/js/html5.js"></script>
 	<![endif]-->
 	<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 
-  <script>
-    function openMenu(){
-      var x = document.getElementById("responsiveMenu");
-      if (x.className === "nav menu menuPrincipal") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav menu menuPrincipal";
-      }
-    }
-    /*Ocultar/exibir menu dropdown ao clicar em dispositivos móveis*/
-    jQuery(function($) {
-      $(document).ready(function(){
-          $('.nav-header').click(function(){
-              $('.nav-header').not(this).nextUntil('.nav-header').hide();
-              $('.nav-header').not(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
-                $(this).nextUntil('.nav-header').toggle();
-              if ($(this).closest('li').find('ul').is(':hidden')){
-                  $(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
-              }
-              else {
-                $(this).attr("style", "background: url(/images/icones/icon_menos.png) no-repeat right;");
-              }
-              return false;
-          });
-          $(document).click(function(){
-              $('.nav-header').nextUntil('.nav-header').hide();
-              $('.nav-header').attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
-          });
+	<script>
+		function openMenu() {
+			var x = document.getElementById("responsiveMenu");
+			if (x.className === "nav menu menuPrincipal") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav menu menuPrincipal";
+			}
+		}
+		/*Ocultar/exibir menu dropdown ao clicar em dispositivos móveis*/
+		jQuery(function ($) {
+			$(document).ready(function () {
+				$('.nav-header').click(function () {
+					$('.nav-header').not(this).nextUntil('.nav-header').hide();
+					$('.nav-header').not(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+					$(this).nextUntil('.nav-header').toggle();
+					if ($(this).closest('li').find('ul').is(':hidden')) {
+						$(this).attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+					}
+					else {
+						$(this).attr("style", "background: url(/images/icones/icon_menos.png) no-repeat right;");
+					}
+					return false;
+				});
+				$(document).click(function () {
+					$('.nav-header').nextUntil('.nav-header').hide();
+					$('.nav-header').attr("style", "background: url(/images/icones/icon_mais.png) no-repeat right;");
+				});
 
-          $(window).resize(function(){
-              var largura = $(document).width();
-              if (largura > 641){
-                $('#responsiveMenu').removeClass('responsive');
-              }
-          });
-      });
-    });
-  </script>
+				$(window).resize(function () {
+					var largura = $(document).width();
+					if (largura > 641) {
+						$('#responsiveMenu').removeClass('responsive');
+					}
+				});
+			});
+		});
+	</script>
 
 </head>
 
@@ -215,12 +237,15 @@
 
 	<!-- Body -->
 	<div class="body">
-	<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
-		<ul id="menu-barra-temp" style="list-style:none;">
-			<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
-			<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
-		</ul>
-	</div>
+		<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+			<ul id="menu-barra-temp" style="list-style:none;">
+				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a
+						href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal
+						do Governo Brasileiro</a></li>
+				<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;"
+						href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+			</ul>
+		</div>
 		<!--<div class="barra-topo">
 			<div class="barra-inner container">
 				<div class="row-fluid">
@@ -243,278 +268,709 @@
 					<div class="clearfix"></div>
 				</div>
 			</div>-->
-                          
-       
-<link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
-
-			<div class="barra-topo">
-    <div class="barra-inner container">
-      <div class="row-fluid">
-          <div class="logo-unb span3">
-             <div class="custom">
-				<p>
-                    <a href="https://www.unb.br" title="Ir para o Portal da UnB">
-            			            			<img alt="" src="https://web.unb.br/images/logo-unb.png">
-				  </a>
-                  </p>
-			 </div>
-          </div>
-          <div class="menu-unb span7">
-                        <div class="menu-toggle-list">
-              <a class="btn-menu collapsed" data-target="#menu-collapse" data-toggle="collapse">
-                                <img src="https://web.unb.br/images/icon-menu.png" alt="Ícone do menu"> <span>Menu</span>
-                
-              </a>
-              <div id="menu-collapse" class="barra-sp-mobile-menu collapse">
-					      <ul class="nav menu"
-      					>
-        					<li class="item-301"><a href="http://www.unb.br/a-unb?menu=423" target="_blank" >Sobre a UnB</a></li><li class="item-305"><a href="https://www.unb.br/institucional/unidades-academicas/institutos" target="_blank" >Unidades acadêmicas</a></li><li class="item-302"><a href="http://estudenaunb.unb.br/" target="_blank" >Estude na UnB</a></li><li class="item-312"><a href="http://www.unb.br/graduacao?menu=439" target="_blank" >Graduação</a></li><li class="item-313"><a href="http://www.unb.br/pos-graduacao?menu=440" target="_blank" >Pós-Graduação</a></li><li class="item-306"><a href="http://www.unb.br/estrutura-administrativa?menu=425" target="_blank" >Administração</a></li><li class="item-307"><a href="http://dgp.unb.br/" target="_blank" >Servidor</a></li>					      </ul>
-			        </div>
-            </div>
-                    
-  
-          </div>
-          <div class="links-unb span2 pull-right">
-                 <div class="modulo-icones-barratopo" style="float:right">
-                     <ul>
-                         <!-- 111 <li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="default">&nbsp;</a>
-                         </li> -->
-<!-- JONA-->                         <li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="webmail" title="Webmail">&nbsp;</a>
-                         </li>
-			 					<li style="display:none;"><a href="/mapa-do-site?view=html&amp;id=0" class="icones-barratopo" style="padding-right:35px" id="mapa" title="Mapa do Site">&nbsp;</a>
-                         		</li>
-                                                         <li><a target="_blank" href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" id="telefones" title="Telefones da UnB">&nbsp;</a>
-                         </li>
-                         <li><a target="_blank" href="https://sistema.ouvidorias.gov.br" id="transparencia" title="Fala.BR">&nbsp;</a>
-                         </li>
-                       
-                       <li><a target="_blank" href="http://www.sistemas.unb.br" class="icones-barratopo" id="sistemas" title="Sistemas">&nbsp;</a>
-                         </li> 
-                       
-                       
-                     </ul>
-                 </div>
-          </div>
-          <div class="clearfix"></div>
-        </div>
-    </div>
-  </div>
 
 
-			
+		<link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
 
-
-
-		</div>
-                          
-		<div class="container">
-			<!-- Header -->
-			<header class="header" role="banner">
-				<div class="header-inner clearfix">
-					<a class="brand pull-left" href="/">
-						<img src="https://cic.unb.br/images/headers/tipograma_CIC_2_alta_326x40.png" alt="Departamento de Ciências da Computação - CIC" />											</a>
-					<div class="header-search pull-right">
-						<form action="/component/pesquisagoogle/" method="post" style="display:inline-table">
-    <div class="btn-toolbar">
-        <div class="btn-group pull-left"> 
-            <!--<input type="text" name="busca" placeholder="Pesquisar..." maxlength="" value="" class="inputbox search-query" />-->
-            <input name="busca" id="mod-search-searchword" class="inputbox search-query" type="search" size="20" placeholder="Pesquisar...">
-        </div>
-    </div>
-</form>
-<div class="jfontsize">
-	<a class="jfontsize-button" id="contraste"></a>
-	<a class="jfontsize-button" id="jfontsize-minus">A-</a>
-	<a class="jfontsize-button" id="jfontsize-default">A</a>
-	<a class="jfontsize-button" id="jfontsize-plus">A+</a>
-</div>
-<script>
-(function ($) {
-		$().ready(function () {
-		$( "a#contraste" ).click(function() {
-  		$("html").toggleClass( "contraste" );
-  		});
-		});
-	})(jQuery)
-
-</script>
+		<div class="barra-topo">
+			<div class="barra-inner container">
+				<div class="row-fluid">
+					<div class="logo-unb span3">
+						<div class="custom">
+							<p>
+								<a href="https://www.unb.br" title="Ir para o Portal da UnB">
+									<img alt="" src="https://web.unb.br/images/logo-unb.png">
+								</a>
+							</p>
+						</div>
 					</div>
+					<div class="menu-unb span7">
+						<div class="menu-toggle-list">
+							<a class="btn-menu collapsed" data-target="#menu-collapse" data-toggle="collapse">
+								<img src="https://web.unb.br/images/icon-menu.png" alt="Ícone do menu"> <span>Menu</span>
+
+							</a>
+							<div id="menu-collapse" class="barra-sp-mobile-menu collapse">
+								<ul class="nav menu">
+									<li class="item-301"><a href="http://www.unb.br/a-unb?menu=423" target="_blank">Sobre a UnB</a></li>
+									<li class="item-305"><a href="https://www.unb.br/institucional/unidades-academicas/institutos"
+											target="_blank">Unidades acadêmicas</a></li>
+									<li class="item-302"><a href="http://estudenaunb.unb.br/" target="_blank">Estude na UnB</a></li>
+									<li class="item-312"><a href="http://www.unb.br/graduacao?menu=439" target="_blank">Graduação</a></li>
+									<li class="item-313"><a href="http://www.unb.br/pos-graduacao?menu=440"
+											target="_blank">Pós-Graduação</a></li>
+									<li class="item-306"><a href="http://www.unb.br/estrutura-administrativa?menu=425"
+											target="_blank">Administração</a></li>
+									<li class="item-307"><a href="http://dgp.unb.br/" target="_blank">Servidor</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="links-unb span2 pull-right">
+						<div class="modulo-icones-barratopo" style="float:right">
+							<ul>
+								<!-- 111 <li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="default">&nbsp;</a>
+                         </li> -->
+								<!-- JONA-->
+								<li><a target="_blank" href="https://webmail.unb.br/" class="icones-barratopo" id="webmail"
+										title="Webmail">&nbsp;</a>
+								</li>
+								<li style="display:none;"><a href="/mapa-do-site?view=html&amp;id=0" class="icones-barratopo"
+										style="padding-right:35px" id="mapa" title="Mapa do Site">&nbsp;</a>
+								</li>
+								<li><a target="_blank" href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" id="telefones"
+										title="Telefones da UnB">&nbsp;</a>
+								</li>
+								<li><a target="_blank" href="https://sistema.ouvidorias.gov.br" id="transparencia"
+										title="Fala.BR">&nbsp;</a>
+								</li>
+
+								<li><a target="_blank" href="http://www.sistemas.unb.br" class="icones-barratopo" id="sistemas"
+										title="Sistemas">&nbsp;</a>
+								</li>
+
+
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-			</header>
-
-      <div class="iconMenuResp">
-        <a href="javascript:void(0);" class="linkMenu" onclick="openMenu()"><h4>MENU</h4>
-          <img src="/images/icones/icon_menu.png">
-        </a>
-      </div><span class="espacos"><br><br></span>
-
-							<div class="row-fluid">
-					<div class="menu-site span12">
-						<nav class="navigation navbar" role="navigation">
-							<ul class="nav menu menuPrincipal"style="position:relative;z-index:3" id="responsiveMenu">
-<li class="item-101"><a class=" hidden" href="/" >Início</a></li><li class="item-747 deeper parent"><span class="nav-header " >O CIC</span>
-<ul class="dropdown-menu-principal"><li class="item-753"><a href="/o-cic/historia" >História</a></li><li class="item-681"><a href="/o-cic/fale-conosco" >Fale Conosco</a></li><li class="item-754"><a href="/o-cic/pessoas" >Pessoas</a></li><li class="item-755"><a href="/o-cic/infraestrutura" >Infraestrutura</a></li><li class="item-756"><a href="/o-cic/marca-cic" >Marca CIC</a></li></ul></li><li class="item-748 deeper parent"><span class="nav-header " >Ensino</span>
-<ul class="dropdown-menu-principal"><li class="item-762"><a href="/ensino/ingressante" >Ingressante</a></li><li class="item-770"><a href="/ensino/graduacao" >Graduação</a></li><li class="item-771"><a href="/ensino/pos-graduacao" >Pós-graduação</a></li></ul></li><li class="item-749 deeper parent"><span class="nav-header " >Pesquisa</span>
-<ul class="dropdown-menu-principal"><li class="item-772"><a href="/pesquisa/grupos-de-pesquisa" >Grupos de pesquisa</a></li><li class="item-774"><a href="/pesquisa/cooperacoes" >Cooperações</a></li></ul></li><li class="item-750 deeper parent"><span class="nav-header " >Extensão</span>
-<ul class="dropdown-menu-principal"><li class="item-776"><a href="/extensao/universitaria" >Universitária</a></li><li class="item-777"><a href="/extensao/extensao-projetos" >Projetos</a></li></ul></li><li class="item-751 deeper parent"><span class="nav-header " >Administração</span>
-<ul class="dropdown-menu-principal"><li class="item-778"><a href="/administracao/chefia" >Chefia</a></li><li class="item-779"><a href="/administracao/coordenacao-de-cursos" >Coordenação de Cursos</a></li><li class="item-780"><a href="/administracao/representacao-em-conselhos-camaras" >Representação em Conselhos/Câmaras</a></li></ul></li><li class="item-752 active deeper parent"><span class="nav-header " >Informações</span>
-<ul class="dropdown-menu-principal"><li class="item-784 current active"><a href="/informacoes/documentos" >Documentos</a></li><li class="item-896"><a href="/informacoes/processos-sei" >Processos SEI</a></li><li class="item-785"><a href="/informacoes/noticias" >Notícias</a></li><li class="item-786"><a href="/component/agenda/agendas" >Eventos</a></li><li class="item-787"><a href="/informacoes/faq" >FAQ</a></li></ul></li></ul>
-
-
-<div class="custom redes-sociais"  >
-	<p><a href="https://www.facebook.com/cicunb" target="_blank" rel="alternate noopener noreferrer"><img src="/images/icones/facebook_01.fw.png" alt="facebook 01.fw" /></a> <a href="https://www.instagram.com/cic.unb/" target="_blank" rel="alternate noopener noreferrer"><img src="/images/icones/instagran_01.fw.png" alt="instagran 01.fw" /></a> <!--a href="https://twitter.com/cicunb" target="_blank" rel="noopener noreferrer"><img src="/images/icones/twitter_01.fw.png" alt="twitter 01.fw" /></a--> <a href="https://www.youtube.com/channel/UCoYRWFWlxTmiQLNcAuM9juA" target="_blank" rel="noopener noreferrer"><img src="/images/icones/unbtv_youtube-2.png" alt="youtube" width="35" height="35" /></a></p></div>
-
-						</nav>
-					</div>			
-				</div>
-												<div class="moduletable">
-						<div aria-label="Trilha de Navegação" role="navigation">
-	<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
-					<li class="active">
-				<span class="divider icon-location"></span>
-			</li>
-		
-						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-											<span itemprop="name">
-							Informações						</span>
-					
-											<span class="divider">
-							<img src="/media/system/images/arrow.png" alt="" />						</span>
-										<meta itemprop="position" content="1">
-				</li>
-							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
-					<span itemprop="name">
-						Documentos					</span>
-					<meta itemprop="position" content="2">
-				</li>
-				</ul>
-</div>
+			</div>
 		</div>
-	
-						<div class="row-fluid">
-								<main id="content" role="main" class="span12">
-					<!-- Begin Content -->
-					
-					<div id="system-message-container">
+
+
+
+
+
+
 	</div>
 
-					<div id="phoca-dl-category-box" class="pd-category-view"><div class="pd-category"><div class="pdtop"><a title="Categories" href="/informacoes/documentos" ><img src="/media/com_phocadownload/images/up.png" alt="Up" /></a></div><h3 class="ph-subheader pd-ctitle" >Documentos</h3><div class="pd-cdesc"><ul>
-<li><b>EST</b>: estágio</li>
-<li><strong>GER</strong>: assuntos gerais</li>
-<li><strong>REG</strong>: regulamentos</li>
-<li><b>TCC</b>: trabalho de conclusão de curso</li>
-</ul></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EDITAL_HorasComplementares_LIC_BCC_2021-1</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=48:edital-horascomplementares-lic-bcc-2021-1" >EDITAL_permantente_AtvComplementares.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=48:edital-horascomplementares-lic-bcc-2021-1" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
+	<div class="container">
+		<!-- Header -->
+		<header class="header" role="banner">
+			<div class="header-inner clearfix">
+				<a class="brand pull-left" href="https://cic-traducao.vercel.app/en_US.html">
+					<img src="https://cic.unb.br/images/headers/tipograma_CIC_2_alta_326x40.png"
+						alt="Departamento de Ciências da Computação - CIC" /> </a>
+				<div class="header-search pull-right">
+					<form action="/component/pesquisagoogle/" method="post" style="display:inline-table">
+						<div class="btn-toolbar">
+							<div class="btn-group pull-left">
+								<!--<input type="text" name="busca" placeholder="Pesquisar..." maxlength="" value="" class="inputbox search-query" />-->
+								<input name="busca" id="mod-search-searchword" class="inputbox search-query" type="search" size="20"
+									placeholder="Pesquisar...">
+							</div>
+						</div>
+					</form>
+					<div class="jfontsize">
+						<a class="jfontsize-button" id="contraste"></a>
+						<a class="jfontsize-button" id="jfontsize-minus">A-</a>
+						<a class="jfontsize-button" id="jfontsize-default">A</a>
+						<a class="jfontsize-button" id="jfontsize-plus">A+</a>
+					</div>
+					<script>
+						(function ($) {
+							$().ready(function () {
+								$("a#contraste").click(function () {
+									$("html").toggleClass("contraste");
+								});
+							});
+						})(jQuery)
 
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EDITAL_HorasComplementares_LIC_BCC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;129.59 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;17 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EST_Relatorio_de_Atividades</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=9:est-relatorio-de-atividades" >EST_Relatorio_de_Atividades.odt</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=9:est-relatorio-de-atividades" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Relatorio_de_Atividades&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;13.05 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EST_Termo_aditivo</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=10:est-termo-aditivo" >EST_Termo_aditivo.odt</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=10:est-termo-aditivo" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_aditivo&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;16.79 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EST_Termo_de_Compromisso_de_Estagio_Obrigatorio_Engenharia</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=46:est-termo-de-compromisso-de-estagio-obrigatorio-engenharia" >Termo-de-Compromisso-de-Estgio-Obrigatorio-1.docx</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=46:est-termo-de-compromisso-de-estagio-obrigatorio-engenharia" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_Compromisso_de_Estagio_Obrigatorio_Engenharia&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;13.20 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;09 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EST_Termo_de_compromisso_nao_obrigatorio</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=11:est-termo-de-compromisso-nao-obrigatorio" >Termo-de-Compromisso-de-Estagio-Nao-Obrigatorio-1.docx</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=11:est-termo-de-compromisso-nao-obrigatorio" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_compromisso_nao_obrigatorio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;12.15 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">EST_Termo_de_rescisao</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=12:est-termo-de-rescisao" >EST_Termo_de_rescisao.odt</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=12:est-termo-de-rescisao" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_rescisao&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;11.20 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">GER_Atividades_Complementares</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=23:ger-formulario-requerimento" >GER_AtivComplementares.docx</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=23:ger-formulario-requerimento" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Atividades_Complementares&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18.37 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">GER_Exposicao_de_motivos</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=16:ger-exposicao-de-motivos" >GER_Exposicao_de_motivos.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=16:ger-exposicao-de-motivos" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Exposicao_de_motivos&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;27.37 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">GER_Formulario-de-Revisao-Mencao</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=17:ger-formulario-de-revisao-mencao" >GER_Formulario-de-Revisao-Mencao.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=17:ger-formulario-de-revisao-mencao" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Formulario-de-Revisao-Mencao&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;74.98 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">GER_Guia_para_Estudantes_do_CIC</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=39:ger-cartilha-da-graduacao" >Guia_para_Estudantes_do_CIC_3ed.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=39:ger-cartilha-da-graduacao" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Guia_para_Estudantes_do_CIC&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;810.14 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;25 Outubro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">GER_Manual-da-comunicacao-para-usuarios</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=50:ger-manual-da-comunicacao-para-usuarios" >Manual_da_comunicacao_para_usuarios.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=50:ger-manual-da-comunicacao-para-usuarios" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Manual-da-comunicacao-para-usuarios&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;684.67 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;28 Julho 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">LiC-Carta-Apresentação-Estágio</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=52:lic-carta-apresentacao-estagio" >CARTA_DE_APRSENTAO_LICENCIATURA.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=52:lic-carta-apresentacao-estagio" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;LiC-Carta-Apresentação-Estágio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;78.19 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">LiC-Relatório-Final-estágio</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=53:lic-relatorio-final-estagio" >RELATRIO__FINAL_DE_ESTGIO_DAS_LICENCIATURAS.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=53:lic-relatorio-final-estagio" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;LiC-Relatório-Final-estágio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;118.31 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">Plano-de-Contingencia-do-Instituto-de-Ciencias-Exatas</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=40:plano-de-contingencia-do-instituto-de-ciencias-exatas" >Plano de Contingencia do Instituto de Ciencia exatas.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=40:plano-de-contingencia-do-instituto-de-ciencias-exatas" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;Plano-de-Contingencia-do-Instituto-de-Ciencias-Exatas&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;1.18 MB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;25 Outubro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">REG_HorasComplementares_BCC_2021-1</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=49:reg-horascomplementares-bcc-2021-1" >REG_HorasComplementares_BCC_2021-1.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=49:reg-horascomplementares-bcc-2021-1" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;REG_HorasComplementares_BCC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;60.22 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;02 Fevereiro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">REG_HorasComplementares_LIC_2021-1</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=47:reg-horascomplementares-lic-2021-1" >REG_AtvComplementares_LIC_2021-1.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=47:reg-horascomplementares-lic-2021-1" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;REG_HorasComplementares_LIC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;238.11 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;17 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><div class="pd-filebox"><div class="pd-filenamebox"><div class="pd-title">Termo_de_Compromisso_de_Estagio_Obrigatorio_Supervisionado</div><div class="pd-filename"><div class="pd-document16" style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;"><div class="pd-float"><a class="" href="/informacoes/documentos?download=54:termo-de-compromisso-de-estagio-engenharia-obrigatorio-engenharia" >TERMO_DE_COMPROMISSO_DO_ESTAGIRIO_PARA_A_REALIZAO_DE_ESTGIO_CURRICULAR_SUPERVISIONADO.pdf</a></div></div></div></div>
-<div class="pd-buttons"><div class="pd-button-download"><a class="btn btn-success" href="/informacoes/documentos?download=54:termo-de-compromisso-de-estagio-engenharia-obrigatorio-engenharia" >Download</a></div></div><div class="pd-buttons"><div class="pd-button-details"><a class="btn btn-info" 
-
-onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;Termo_de_Compromisso_de_Estagio_Obrigatorio_Supervisionado&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;12.89 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');" onmouseout="return nd();"
- href="#">Details</a></div></div><div class="pd-cb"></div></div><form action="https://cic.unb.br/informacoes/documentos" method="post" name="adminForm">
-<div class="pd-cb">&nbsp;</div><div class="pgcenter"><div class="pagination"><div class="pginline">Ordering&nbsp;<select id="fileordering" name="fileordering" class="inputbox" size="1" onchange="this.form.submit()">
-	<option value="1">Ordering Ascending</option>
-	<option value="2">Ordering Descending</option>
-	<option value="3" selected="selected">Title Ascending</option>
-	<option value="4">Title Descending</option>
-	<option value="5">Date Ascending</option>
-	<option value="6">Date Descending</option>
-	<option value="11">Filename Ascending</option>
-	<option value="12">Filename Descending</option>
-	<option value="15">Rating Count Ascending</option>
-	<option value="16">Rating Count Descending</option>
-	<option value="13">Rating Ascending</option>
-	<option value="14">Rating Descending</option>
-	<option value="9">Downloads Ascending</option>
-	<option value="10">Downloads Descending</option>
-</select>
- &nbsp;Display Num&nbsp;<select id="limit" name="limit" class="inputbox input-mini" size="1" onchange="this.form.submit()">
-	<option value="5">5</option>
-	<option value="10">10</option>
-	<option value="15">15</option>
-	<option value="20" selected="selected">20</option>
-	<option value="50">50</option>
-	<option value="0">All</option>
-</select>
- &nbsp;</div><div style="margin:0 10px 0 10px;display:inline;" class="sectiontablefooter" id="pg-pagination" ></div></div></div>
-<input type="hidden" name="0c6e430fcd699fb59c742b2ef315df96" value="1" /></form></div></div><div class="pd-cb">&nbsp;</div><div style="text-align:right;color:#ccc;display:block">Powered by <a href="https://www.phoca.cz/phocadownload">Phoca Download</a></div>
-					
-					<!-- End Content -->
-				</main>
-								
+					</script>
+				</div>
 			</div>
-						<div class="row-fluid destaques">
-								
+		</header>
+
+		<div class="iconMenuResp">
+			<a href="javascript:void(0);" class="linkMenu" onclick="openMenu()">
+				<h4>MENU</h4>
+				<img src="/images/icones/icon_menu.png">
+			</a>
+		</div><span class="espacos"><br><br></span>
+
+		<div class="row-fluid">
+			<div class="menu-site span12">
+				<nav class="navigation navbar" role="navigation">
+					<ul class="nav menu menuPrincipal" style="position:relative;z-index:3" id="responsiveMenu">
+						<li class="item-101"><a class=" hidden" href="https://cic-traducao.vercel.app/en_US.html">Início</a></li>
+						<li class="item-747 deeper parent"><span class="nav-header ">O CIC</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-753"><a href="https://cic-traducao.vercel.app/historia/en_US.html">História</a></li>
+								<li class="item-681"><a href="https://cic-traducao.vercel.app/fale-conosco/en_US.html">Fale Conosco</a>
+								</li>
+								<li class="item-754"><a href="https://cic-traducao.vercel.app/pessoas/en_US.html">Pessoas</a></li>
+								<li class="item-755"><a
+										href="https://cic-traducao.vercel.app/infraestrutura/en_US.html">Infraestrutura</a></li>
+								<li class="item-756"><a href="https://cic-traducao.vercel.app/marca-cic/en_US.html">Marca CIC</a></li>
+							</ul>
+						</li>
+						<li class="item-748 deeper parent"><span class="nav-header ">Ensino</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-762"><a href="https://cic-traducao.vercel.app/ingressante/en_US.html">Ingressante</a>
+								</li>
+								<li class="item-770"><a href="https://cic-traducao.vercel.app/graduacao/en_US.html">Graduação</a></li>
+								<li class="item-771"><a
+										href="https://cic-traducao.vercel.app/pos-graduacao/en_US.html">Pós-graduação</a></li>
+							</ul>
+						</li>
+						<li class="item-749 deeper parent"><span class="nav-header ">Pesquisa</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-772"><a href="https://cic-traducao.vercel.app/grupos-de-pesquisa/en_US.html">Grupos de
+										pesquisa</a></li>
+								<li class="item-774"><a href="https://cic-traducao.vercel.app/cooperacoes/en_US.html">Cooperações</a>
+								</li>
+							</ul>
+						</li>
+						<li class="item-750 deeper parent"><span class="nav-header ">Extensão</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-776"><a
+										href="https://cic-traducao.vercel.app/universitaria/en_US.html">Universitária</a></li>
+								<li class="item-777"><a href="https://cic-traducao.vercel.app/extensao-projetos/en_US.html">Projetos</a>
+								</li>
+							</ul>
+						</li>
+						<li class="item-751 deeper parent"><span class="nav-header ">Administração</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-778"><a href="https://cic-traducao.vercel.app/chefia/en_US.html">Chefia</a></li>
+								<li class="item-779"><a
+										href="https://cic-traducao.vercel.app/coordenacao-de-cursos/en_US.html">Coordenação de Cursos</a>
+								</li>
+								<li class="item-780"><a
+										href="https://cic-traducao.vercel.app/representacao-em-conselhos-camaras/en_US.html">Representação
+										em
+										Conselhos/Câmaras</a></li>
+							</ul>
+						</li>
+						<li class="item-752 active deeper parent"><span class="nav-header ">Informações</span>
+							<ul class="dropdown-menu-principal">
+								<li class="item-784 current active"><a
+										href="https://cic-traducao.vercel.app/documentos/en_US.html">Documentos</a></li>
+								<li class="item-896"><a href="https://cic-traducao.vercel.app/processos-sei/en_US.html">Processos
+										SEI</a></li>
+								<li class="item-785"><a href="/informacoes/noticias">Notícias</a></li>
+								<li class="item-786"><a href="https://cic-traducao.vercel.app/agendas/en_US.html">Eventos</a></li>
+								<li class="item-787"><a href="https://cic-traducao.vercel.app/faq/en_US.html">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+
+
+					<div class="custom redes-sociais">
+						<p><a href="https://www.facebook.com/cicunb" target="_blank" rel="alternate noopener noreferrer"><img
+									src="/images/icones/facebook_01.fw.png" alt="facebook 01.fw" /></a> <a
+								href="https://www.instagram.com/cic.unb/" target="_blank" rel="alternate noopener noreferrer"><img
+									src="/images/icones/instagran_01.fw.png" alt="instagran 01.fw" /></a>
+							<!--a href="https://twitter.com/cicunb" target="_blank" rel="noopener noreferrer"><img src="/images/icones/twitter_01.fw.png" alt="twitter 01.fw" /></a-->
+							<a href="https://www.youtube.com/channel/UCoYRWFWlxTmiQLNcAuM9juA" target="_blank"
+								rel="noopener noreferrer"><img src="/images/icones/unbtv_youtube-2.png" alt="youtube" width="35"
+									height="35" /></a>
+						</p>
+					</div>
+
+				</nav>
 			</div>
+		</div>
+		<div class="moduletable">
+			<div aria-label="Trilha de Navegação" role="navigation">
+				<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li class="active">
+						<span class="divider icon-location"></span>
+					</li>
+
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<span itemprop="name">
+							Informações </span>
+
+						<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="" /> </span>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+						<span itemprop="name">
+							Documentos </span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<main id="content" role="main" class="span12">
+				<!-- Begin Content -->
+
+				<div id="system-message-container">
+				</div>
+
+				<div id="phoca-dl-category-box" class="pd-category-view">
+					<div class="pd-category">
+						<div class="pdtop"><a title="Categories" href="/informacoes/documentos"><img
+									src="/media/com_phocadownload/images/up.png" alt="Up" /></a></div>
+						<h3 class="ph-subheader pd-ctitle">Documentos</h3>
+						<div class="pd-cdesc">
+							<ul>
+								<li><b>EST</b>: estágio</li>
+								<li><strong>GER</strong>: assuntos gerais</li>
+								<li><strong>REG</strong>: regulamentos</li>
+								<li><b>TCC</b>: trabalho de conclusão de curso</li>
+							</ul>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EDITAL_HorasComplementares_LIC_BCC_2021-1</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=48:edital-horascomplementares-lic-bcc-2021-1">EDITAL_permantente_AtvComplementares.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=48:edital-horascomplementares-lic-bcc-2021-1">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EDITAL_HorasComplementares_LIC_BCC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;129.59 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;17 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EST_Relatorio_de_Atividades</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=9:est-relatorio-de-atividades">EST_Relatorio_de_Atividades.odt</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=9:est-relatorio-de-atividades">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Relatorio_de_Atividades&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;13.05 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EST_Termo_aditivo</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=10:est-termo-aditivo">EST_Termo_aditivo.odt</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=10:est-termo-aditivo">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_aditivo&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;16.79 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EST_Termo_de_Compromisso_de_Estagio_Obrigatorio_Engenharia</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=46:est-termo-de-compromisso-de-estagio-obrigatorio-engenharia">Termo-de-Compromisso-de-Estgio-Obrigatorio-1.docx</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=46:est-termo-de-compromisso-de-estagio-obrigatorio-engenharia">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_Compromisso_de_Estagio_Obrigatorio_Engenharia&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;13.20 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;09 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EST_Termo_de_compromisso_nao_obrigatorio</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=11:est-termo-de-compromisso-nao-obrigatorio">Termo-de-Compromisso-de-Estagio-Nao-Obrigatorio-1.docx</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=11:est-termo-de-compromisso-nao-obrigatorio">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_compromisso_nao_obrigatorio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;12.15 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">EST_Termo_de_rescisao</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=12:est-termo-de-rescisao">EST_Termo_de_rescisao.odt</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=12:est-termo-de-rescisao">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;EST_Termo_de_rescisao&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;11.20 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">GER_Atividades_Complementares</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-document.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=23:ger-formulario-requerimento">GER_AtivComplementares.docx</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=23:ger-formulario-requerimento">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Atividades_Complementares&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18.37 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">GER_Exposicao_de_motivos</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=16:ger-exposicao-de-motivos">GER_Exposicao_de_motivos.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=16:ger-exposicao-de-motivos">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Exposicao_de_motivos&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;27.37 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">GER_Formulario-de-Revisao-Mencao</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=17:ger-formulario-de-revisao-mencao">GER_Formulario-de-Revisao-Mencao.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=17:ger-formulario-de-revisao-mencao">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Formulario-de-Revisao-Mencao&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;74.98 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;20 Julho 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">GER_Guia_para_Estudantes_do_CIC</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=39:ger-cartilha-da-graduacao">Guia_para_Estudantes_do_CIC_3ed.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=39:ger-cartilha-da-graduacao">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Guia_para_Estudantes_do_CIC&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;810.14 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;25 Outubro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">GER_Manual-da-comunicacao-para-usuarios</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=50:ger-manual-da-comunicacao-para-usuarios">Manual_da_comunicacao_para_usuarios.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=50:ger-manual-da-comunicacao-para-usuarios">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;GER_Manual-da-comunicacao-para-usuarios&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;684.67 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;28 Julho 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">LiC-Carta-Apresentação-Estágio</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=52:lic-carta-apresentacao-estagio">CARTA_DE_APRSENTAO_LICENCIATURA.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=52:lic-carta-apresentacao-estagio">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;LiC-Carta-Apresentação-Estágio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;78.19 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">LiC-Relatório-Final-estágio</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=53:lic-relatorio-final-estagio">RELATRIO__FINAL_DE_ESTGIO_DAS_LICENCIATURAS.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=53:lic-relatorio-final-estagio">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;LiC-Relatório-Final-estágio&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;118.31 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">Plano-de-Contingencia-do-Instituto-de-Ciencias-Exatas</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=40:plano-de-contingencia-do-instituto-de-ciencias-exatas">Plano
+												de Contingencia do Instituto de Ciencia exatas.pdf</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=40:plano-de-contingencia-do-instituto-de-ciencias-exatas">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;Plano-de-Contingencia-do-Instituto-de-Ciencias-Exatas&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;1.18 MB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;25 Outubro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">REG_HorasComplementares_BCC_2021-1</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=49:reg-horascomplementares-bcc-2021-1">REG_HorasComplementares_BCC_2021-1.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=49:reg-horascomplementares-bcc-2021-1">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;REG_HorasComplementares_BCC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;60.22 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;02 Fevereiro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">REG_HorasComplementares_LIC_2021-1</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=47:reg-horascomplementares-lic-2021-1">REG_AtvComplementares_LIC_2021-1.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=47:reg-horascomplementares-lic-2021-1">Download</a></div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;REG_HorasComplementares_LIC_2021-1&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;238.11 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;17 Novembro 2021&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<div class="pd-filebox">
+							<div class="pd-filenamebox">
+								<div class="pd-title">Termo_de_Compromisso_de_Estagio_Obrigatorio_Supervisionado</div>
+								<div class="pd-filename">
+									<div class="pd-document16"
+										style="background: url('https://cic.unb.br/media/com_phocadownload/images/mime/16/icon-pdf.png') 0 center no-repeat;">
+										<div class="pd-float"><a class=""
+												href="/informacoes/documentos?download=54:termo-de-compromisso-de-estagio-engenharia-obrigatorio-engenharia">TERMO_DE_COMPROMISSO_DO_ESTAGIRIO_PARA_A_REALIZAO_DE_ESTGIO_CURRICULAR_SUPERVISIONADO.pdf</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-download"><a class="btn btn-success"
+										href="/informacoes/documentos?download=54:termo-de-compromisso-de-estagio-engenharia-obrigatorio-engenharia">Download</a>
+								</div>
+							</div>
+							<div class="pd-buttons">
+								<div class="pd-button-details"><a class="btn btn-info"
+										onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&lt;div class=\'pd-title\'&gt;Termo_de_Compromisso_de_Estagio_Obrigatorio_Supervisionado&lt;/div&gt;&lt;div class=\'pd-filesize-txt\'&gt;File Size:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;12.89 kB&lt;/div&gt;&lt;div class=\'pd-date-txt\'&gt;Date:&lt;/div&gt;&lt;div class=\'pd-fl-m\'&gt;18 Outubro 2022&lt;/div&gt;&lt;/div&gt;', CAPTION, 'Details', BELOW, RIGHT, CSSCLASS, TEXTFONTCLASS, 'fontPhocaPDClass', FGCLASS, 'fgPhocaPDClass', BGCLASS, 'bgPhocaPDClass', CAPTIONFONTCLASS,'capfontPhocaPDClass', CLOSEFONTCLASS, 'capfontclosePhocaPDClass', STICKY, MOUSEOFF, CLOSETEXT, 'Close');"
+										onmouseout="return nd();" href="#">Details</a></div>
+							</div>
+							<div class="pd-cb"></div>
+						</div>
+						<form action="https://cic.unb.br/informacoes/documentos" method="post" name="adminForm">
+							<div class="pd-cb">&nbsp;</div>
+							<div class="pgcenter">
+								<div class="pagination">
+									<div class="pginline">Ordering&nbsp;<select id="fileordering" name="fileordering" class="inputbox"
+											size="1" onchange="this.form.submit()">
+											<option value="1">Ordering Ascending</option>
+											<option value="2">Ordering Descending</option>
+											<option value="3" selected="selected">Title Ascending</option>
+											<option value="4">Title Descending</option>
+											<option value="5">Date Ascending</option>
+											<option value="6">Date Descending</option>
+											<option value="11">Filename Ascending</option>
+											<option value="12">Filename Descending</option>
+											<option value="15">Rating Count Ascending</option>
+											<option value="16">Rating Count Descending</option>
+											<option value="13">Rating Ascending</option>
+											<option value="14">Rating Descending</option>
+											<option value="9">Downloads Ascending</option>
+											<option value="10">Downloads Descending</option>
+										</select>
+										&nbsp;Display Num&nbsp;<select id="limit" name="limit" class="inputbox input-mini" size="1"
+											onchange="this.form.submit()">
+											<option value="5">5</option>
+											<option value="10">10</option>
+											<option value="15">15</option>
+											<option value="20" selected="selected">20</option>
+											<option value="50">50</option>
+											<option value="0">All</option>
+										</select>
+										&nbsp;</div>
+									<div style="margin:0 10px 0 10px;display:inline;" class="sectiontablefooter" id="pg-pagination"></div>
+								</div>
+							</div>
+							<input type="hidden" name="0c6e430fcd699fb59c742b2ef315df96" value="1" />
+						</form>
+					</div>
+				</div>
+				<div class="pd-cb">&nbsp;</div>
+				<div style="text-align:right;color:#ccc;display:block">Powered by <a
+						href="https://www.phoca.cz/phocadownload">Phoca Download</a></div>
+
+				<!-- End Content -->
+			</main>
 
 		</div>
-					    <!--<style>
+		<div class="row-fluid destaques">
+
+		</div>
+
+	</div>
+	<!--<style>
   
        a:hover {
          color:#fff;
          
       }</style>-->
-	<!-- Footer --> 
+	<!-- Footer -->
 	<footer class="footer" role="contentinfo">
 		<!--<div class="footer-inner">
 						<div class="clearfix"></div>
@@ -528,32 +984,87 @@ onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&l
 			</div>
 		</div>-->
 
-       <link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
-	<!--div class='cookie_bar'>
+		<link type="text/css" href="https://web.unb.br/templates/compartilhado/css/template.css" rel="stylesheet">
+		<!--div class='cookie_bar'>
             Usamos cookies para permitir que o nosso website funcione corretamente, para personalizar conteúdo e anúncios, para proporcionar funcionalidades das redes sociais e para analisar o nosso tráfego. Também partilhamos informação com os nossos parceiros das redes sociais, de publicidade e de analítica sobre o seu uso do nosso website. Saiba mais: 
             <a href='https://web.unb.br/images/politica-de-cookies/Poltica_de_Cookies.pdf' title='Políticas de cookies' target='_blank'>Políticas de cookies</a>
                 <button type='button'>Aceitar cookies</button>
         </div-->
-       	<footer class="footer" role="contentinfo">
-		<div class="footer-inner">
-			<div class="menu-footer container">
-			
-			<!-- <footer class="footer" role="contentinfo">
+		<footer class="footer" role="contentinfo">
+			<div class="footer-inner">
+				<div class="menu-footer container">
+
+					<!-- <footer class="footer" role="contentinfo">
 	<div class="footer-inner">
 		<div class="menu-footer container"> -->
-			<ul class="nav menu">
-			<li class="item-113 divider deeper parent"><span class="separator">
-	Institucional</span>
-<ul class="nav-child unstyled small"><li class="item-114"><a href="https://unb.br/institucional-rodape/historia" >História da UnB</a></li><li class="item-221"><a href="https://unb.br/institucional-rodape/unb-em-numeros" >UnB em Números</a></li><li class="item-222"><a href="https://unb.br/institucional-rodape/campi" >Conheça os campi</a></li><li class="item-223"><a href="https://unb.br/institucional-rodape/transportes" >Como chegar</a></li><li class="item-224"><a href="https://unb.br/images/Noticias/2021/Documentos/regimento_interno_UnB_web2b.pdf" >Estatuto e Regimento</a></li></ul></li><li class="item-280 divider deeper parent"><span class="separator">
-	Administrativo</span>
-<ul class="nav-child unstyled small"><li class="item-281"><a href="https://unb.br/administrativo-rodape/reitoria" >Reitoria</a></li><li class="item-282"><a href="https://unb.br/administrativo-rodape/vice-reitoria" >Vice-Reitoria</a></li><li class="item-284"><a href="https://unb.br/administrativo-rodape/conselhos-e-camaras" >Conselhos e câmaras</a></li><li class="item-283"><a href="https://unb.br/administrativo-rodape/decanatos" >Decanatos</a></li><li class="item-146"><a href="https://unb.br/administrativo-rodape/secretarias" >Secretarias</a></li><li class="item-285"><a href="http://www.prc.unb.br/" >Prefeitura da UnB</a></li></ul></li><li class="item-259 divider deeper parent"><span class="separator">
-	Acadêmico</span>
-<ul class="nav-child unstyled small"><li class="item-261"><a href="https://unb.br/academico-rodape/faculdades" >Faculdades</a></li><li class="item-262"><a href="https://unb.br/academico-rodape/institutos" >Institutos</a></li><li class="item-260"><a href="https://unb.br/academico-rodape/centros" >Centros</a></li><li class="item-277"><a href="https://unb.br/academico-rodape/educacao-a-distancia" >Educação a Distância</a></li><li class="item-263"><a href="http://int.unb.br/br/institucional/a-int" >Assuntos Internacionais</a></li></ul></li><li class="item-122 divider deeper parent"><span class="separator">
-	Serviços</span>
-<ul class="nav-child unstyled small"><li class="item-142"><a href="https://www.arquivocentral.unb.br/" >Arquivo Central</a></li><li class="item-273"><a href="https://bce.unb.br/" >Biblioteca Central</a></li><li class="item-124"><a href="https://www.editora.unb.br/" >Editora UnB</a></li><li class="item-279"><a href="https://www.etir.unb.br/" target="_blank" >Equipe de Tratamento e Resposta a Incidentes Cibernéticos</a></li><li class="item-145"><a href="http://fal.unb.br/" >Fazenda Água Limpa</a></li><li class="item-138"><a href="http://www.ebserh.gov.br/web/hub-unb" >Hospital Universitário</a></li><li class="item-276"><a href="https://unb.br/servicos-rodape/hospitais-veterinarios" >Hospitais Veterinários</a></li><li class="item-475"><a href="https://ru.unb.br/index.php/cardapio" >Restaurante Universitário</a></li></ul></li><li class="item-173 divider deeper parent"><span class="separator">
-	Comunicação</span>
-<ul class="nav-child unstyled small"><li class="item-291"><a href="https://secom.unb.br/" target="_blank" >Atendimento a Jornalistas</a></li><li class="item-294"><a href="http://noticias.unb.br/secom/123-secom/equipe" >Fale com a Secom</a></li><li class="item-174"><a href="http://noticias.unb.br/secom-unb/2-publicacoes/4012-canais-oficiais" >Canais Oficiais</a></li><li class="item-293"><a href="http://www.marca.unb.br" >Marca UnB</a></li><li class="item-468"><a href="https://unbbr-my.sharepoint.com/:f:/g/personal/design_secom_unb_br/EuuC9Wk-ia9Ilev8-yvLjkIBfROYVRjOCPDW8_BP2JSUlQ" >Campanha Institucional 2022</a></li><li class="item-289"><a href="http://www.unbtv.unb.br/" >UnB TV</a></li></ul></li></ul>
-<!-- 		</div>
+					<ul class="nav menu">
+						<li class="item-113 divider deeper parent"><span class="separator">
+								Institucional</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-114"><a href="https://unb.br/institucional-rodape/historia">História da UnB</a></li>
+								<li class="item-221"><a href="https://unb.br/institucional-rodape/unb-em-numeros">UnB em Números</a>
+								</li>
+								<li class="item-222"><a href="https://unb.br/institucional-rodape/campi">Conheça os campi</a></li>
+								<li class="item-223"><a href="https://unb.br/institucional-rodape/transportes">Como chegar</a></li>
+								<li class="item-224"><a
+										href="https://unb.br/images/Noticias/2021/Documentos/regimento_interno_UnB_web2b.pdf">Estatuto e
+										Regimento</a></li>
+							</ul>
+						</li>
+						<li class="item-280 divider deeper parent"><span class="separator">
+								Administrativo</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-281"><a href="https://unb.br/administrativo-rodape/reitoria">Reitoria</a></li>
+								<li class="item-282"><a href="https://unb.br/administrativo-rodape/vice-reitoria">Vice-Reitoria</a></li>
+								<li class="item-284"><a href="https://unb.br/administrativo-rodape/conselhos-e-camaras">Conselhos e
+										câmaras</a></li>
+								<li class="item-283"><a href="https://unb.br/administrativo-rodape/decanatos">Decanatos</a></li>
+								<li class="item-146"><a href="https://unb.br/administrativo-rodape/secretarias">Secretarias</a></li>
+								<li class="item-285"><a href="http://www.prc.unb.br/">Prefeitura da UnB</a></li>
+							</ul>
+						</li>
+						<li class="item-259 divider deeper parent"><span class="separator">
+								Acadêmico</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-261"><a href="https://unb.br/academico-rodape/faculdades">Faculdades</a></li>
+								<li class="item-262"><a href="https://unb.br/academico-rodape/institutos">Institutos</a></li>
+								<li class="item-260"><a href="https://unb.br/academico-rodape/centros">Centros</a></li>
+								<li class="item-277"><a href="https://unb.br/academico-rodape/educacao-a-distancia">Educação a
+										Distância</a></li>
+								<li class="item-263"><a href="http://int.unb.br/br/institucional/a-int">Assuntos Internacionais</a></li>
+							</ul>
+						</li>
+						<li class="item-122 divider deeper parent"><span class="separator">
+								Serviços</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-142"><a href="https://www.arquivocentral.unb.br/">Arquivo Central</a></li>
+								<li class="item-273"><a href="https://bce.unb.br/">Biblioteca Central</a></li>
+								<li class="item-124"><a href="https://www.editora.unb.br/">Editora UnB</a></li>
+								<li class="item-279"><a href="https://www.etir.unb.br/" target="_blank">Equipe de Tratamento e Resposta
+										a Incidentes Cibernéticos</a></li>
+								<li class="item-145"><a href="http://fal.unb.br/">Fazenda Água Limpa</a></li>
+								<li class="item-138"><a href="http://www.ebserh.gov.br/web/hub-unb">Hospital Universitário</a></li>
+								<li class="item-276"><a href="https://unb.br/servicos-rodape/hospitais-veterinarios">Hospitais
+										Veterinários</a></li>
+								<li class="item-475"><a href="https://ru.unb.br/index.php/cardapio">Restaurante Universitário</a></li>
+							</ul>
+						</li>
+						<li class="item-173 divider deeper parent"><span class="separator">
+								Comunicação</span>
+							<ul class="nav-child unstyled small">
+								<li class="item-291"><a href="https://secom.unb.br/" target="_blank">Atendimento a Jornalistas</a></li>
+								<li class="item-294"><a href="http://noticias.unb.br/secom/123-secom/equipe">Fale com a Secom</a></li>
+								<li class="item-174"><a
+										href="http://noticias.unb.br/secom-unb/2-publicacoes/4012-canais-oficiais">Canais Oficiais</a></li>
+								<li class="item-293"><a href="http://www.marca.unb.br">Marca UnB</a></li>
+								<li class="item-468"><a
+										href="https://unbbr-my.sharepoint.com/:f:/g/personal/design_secom_unb_br/EuuC9Wk-ia9Ilev8-yvLjkIBfROYVRjOCPDW8_BP2JSUlQ">Campanha
+										Institucional 2022</a></li>
+								<li class="item-289"><a href="http://www.unbtv.unb.br/">UnB TV</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- 		</div>
 <div class="clearfix"></div>
 <hr>
 <div class="creditos text-center container">
@@ -567,51 +1078,57 @@ onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&l
 	</div>
 </footer> -->
 
+				</div>
+				<div class="clearfix"></div>
+				<hr>
+				<div class="container creditos">
+					<div class="prestacao-contas text-center">
+						<div>&nbsp;</div>
+					</div>
+					<div class="copyright text-center">
+						<span><em>Campus</em> Universitário Darcy Ribeiro, </span>
+						<span>Brasília-DF | CEP 70910-900</span>
+						<span><a href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" alt="" target="_blank">Telefones
+								UnB</a></span>
+						<br />
+						<span>Horário de funcionamento: de 2ª a 6ª, das 7h às 23h. Sábado, das 8h às 18h.</span>
+						<br />
+						<span>Copyright © 2022 <a href="http://unb.br" target="_blank" alt="">Universidade de Brasília</a>.</span>
+						<span>Todos os direitos reservados.</span>
+						<br />
+						<span>Melhor visualizado nos navegadores Google Chrome e Mozilla Firefox</span>
+					</div>
+					<div class="acesso-informacao text-center">
+						<div class="media">
+							<a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação" target="_blank">
+								<img src="https://web.unb.br/images/icones/acesso_informacao.png" alt="Acesso à Informação"
+									style="width: 32px;" />
+							</a>
+							<div style="text-align: left;">
+								<h6 style="margin: 0 0 0 0.9rem;">
+									<small>
+										<a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação"
+											target="_blank" style="color: #026e3a !important; font-size: 0.8rem; font-weight: initial;">Acesso
+											à Informação</a>
+									</small>
+								</h6>
+							</div>
 						</div>
-			<div class="clearfix"></div>
-			<hr>
-<div class="container creditos">
-   <div class="prestacao-contas text-center">
-      <div>&nbsp;</div>
-   </div>
-   <div class="copyright text-center">
-      <span><em>Campus</em> Universitário Darcy Ribeiro, </span>
-      <span>Brasília-DF | CEP 70910-900</span>
-      <span><a href="https://noticias.unb.br/images/Telefones_unb/mprazer.pdf" alt="" target="_blank">Telefones UnB</a></span>
-      <br />
-      <span>Horário de funcionamento: de 2ª a 6ª, das 7h às 23h. Sábado, das 8h às 18h.</span>
-      <br />
-      <span>Copyright © 2022 <a href="http://unb.br" target="_blank" alt="">Universidade de Brasília</a>.</span>
-      <span>Todos os direitos reservados.</span>
-      <br />
-      <span>Melhor visualizado nos navegadores Google Chrome e Mozilla Firefox</span>
-   </div>
-   <div class="acesso-informacao text-center">
-      <div class="media">
-         <a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação" target="_blank">
-            <img src="https://web.unb.br/images/icones/acesso_informacao.png" alt="Acesso à Informação" style="width: 32px;" />
-         </a>
-         <div style="text-align: left;">
-            <h6 style="margin: 0 0 0 0.9rem;">
-               <small>
-                  <a href="https://unb.br/administrativo/acesso-a-informacao/" title="Acesso à Informação" target="_blank" style="color: #026e3a !important; font-size: 0.8rem; font-weight: initial;">Acesso à Informação</a>
-               </small>
-            </h6>
-         </div>
-      </div>
-      <h6 style="font-size: 1.8rem; font-weight: inherit; margin: 1.5rem 0.5rem 0.5rem 0;">
-         <a href="https://ouvidoria.unb.br/" title="Ouvidoria UnB" target="_blank">OUVIDORIA<span style="font-weight: bold;">UnB</span></a>
-      </h6>
-      <h6 style="font-size: 1rem; margin: 1.5rem 0.5rem 1.5rem;">
-         <a href="https://unb.br/institucional/transparencia-e-prestacao-de-contas" title="Transparência UnB" target="_blank" style="line-height: 1.3rem;">TRANSPARÊNCIA E PRESTAÇÃO DE CONTAS</a>
-      </h6>
-   </div>
-</div>
-		
-			
-			
-	</footer>
-<!--script>
+						<h6 style="font-size: 1.8rem; font-weight: inherit; margin: 1.5rem 0.5rem 0.5rem 0;">
+							<a href="https://ouvidoria.unb.br/" title="Ouvidoria UnB" target="_blank">OUVIDORIA<span
+									style="font-weight: bold;">UnB</span></a>
+						</h6>
+						<h6 style="font-size: 1rem; margin: 1.5rem 0.5rem 1.5rem;">
+							<a href="https://unb.br/institucional/transparencia-e-prestacao-de-contas" title="Transparência UnB"
+								target="_blank" style="line-height: 1.3rem;">TRANSPARÊNCIA E PRESTAÇÃO DE CONTAS</a>
+						</h6>
+					</div>
+				</div>
+
+
+
+		</footer>
+		<!--script>
 (function($)
 {
 	
@@ -635,8 +1152,9 @@ onmouseover="return overlib('&lt;div style=\'text-align:left;padding:5px\'&gt;&l
 
 
 
-	
-    </footer>
-	
+
+	</footer>
+
 </body>
+
 </html>
