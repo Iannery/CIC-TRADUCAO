@@ -1,10 +1,8 @@
 ## Tradução CIC
 
-Este projeto foi desenvolvido para a tradução do site do CIC, porém, pode ser utilizado para qualquer outro site que contenha links para outros sites.
+Este repositório contém o código fonte do site [cic-traducao.vercel.app](https://cic-traducao.vercel.app/en_US.html), uma tradução do site do [CIC](https://cic.unb.br/) em inglês.
 
 **Atenção** - As notícias traduzidas não estão disponíveis por meio dos botões dentro do site, apenas por meio dos links abaixo.
-
-Links presentes em diretórios:
 Endereço Traduzido|Traduzido|Endereço|
 | :----: |:----:| :--- |
 |[Link](https://cic-traducao.vercel.app/en_US.html)|✅|https://cic.unb.br/|
