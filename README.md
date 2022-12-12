@@ -1,4 +1,4 @@
-## TODO
+## Tradução CIC
 
 Links presentes em diretórios:
 |Traduzido | Endereço|
